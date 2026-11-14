@@ -12,6 +12,7 @@
 | **Person 2** | Rankings, built from `data/investigations.csv` | None yet | In Progress |
 | **Person 3** | AI summaries, built from `data/investigations.csv` | None yet | In Progress |
 | **Person 4** | Spacecraft fire safety scenarios, suppression standards, and dashboard configuration parameters | `data/incidents.csv` (not in repo yet) | In Progress |
+| **Person 5** | Research and submission | None yet | In Progress |
 
 ### Docs & Scripts
 
