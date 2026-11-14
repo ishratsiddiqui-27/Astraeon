@@ -3,6 +3,7 @@
 **Dataset File:** `data/investigations.csv`  
 **Source:** NASA Physical Sciences Informatics (PSI) Repository (`psi.nasa.gov`)  
 **Collection Date:** November 14, 2026  
+**Last Verified:** November 15, 2026 (oxygen and pressure cells checked against PSI experiment tables; see section 8)  
 **Curator:** Maimuna Afrah (data collection and curation)  
 **Status:** **Columns Frozen** (19 columns)  
 
@@ -19,8 +20,8 @@ Any **blank/empty cell** indicates that the value was **unknown or not reported*
 | `fuel_type` | enum/string | Primary fuel state | `solid`, `liquid`, `gas`, or blank (for non-burning tests) |
 | `fuel_detail` | string | Specific material or chemical fuel formulation | *e.g., SIBAL fabric, n-dodecane, ethylene/CH4* |
 | `hardware` | string | Flight apparatus, glovebox, or rack | CIR, MDCA, MSG, Cygnus flow duct |
-| `o2_percent` | string | Reported oxygen concentration text for display | `21%`, `12 - 85%`, `21.5 - 22.1%` |
-| `pressure_psi` | string | Pressure formatted in PSI (converted from atm) | `8.2 - 14.7 psia`, `3.7 - 73.5 psi` |
+| `o2_percent` | string | Reported oxygen concentration text for display. Says whether high O2 was in the chamber air (ambient) or only in the burner flow | `12 - 34%`, `17 - 21%`, `12 - 85% (ambient 18-40% in normal flames; burner flow 12-85% in inverse flames)` |
+| `pressure_psi` | string | Pressure formatted in PSI (converted from atm, bar or mmHg) | `8.2 - 14.7 psia`, `7.3 - 73.5 psi`, `~14.7 psi (~1 atm)` |
 | `airflow` | string | Forced or convective airflow velocity | `20 cm/s`, `30 cm/s`, `quiescent (0 cm/s)` |
 | `gravity` | enum/string | Gravity environment of the test | `microgravity` (flight/orbit) or `normal gravity` (ground) |
 | `sensors` | string | Diagnostics and instrumentation used | Radiometers, thermocouples, cameras, pyrometry |
@@ -29,8 +30,8 @@ Any **blank/empty cell** indicates that the value was **unknown or not reported*
 | `what_same` | string | Parameters held constant across the test matrix | Microgravity, chamber volume, igniter power |
 | `topic` | enum/string | Primary spacecraft fire safety relevance | `prevention`, `detection`, or `suppression` |
 | `source_link` | URL | Direct link to the NASA PSI investigation record | `https://psi.nasa.gov/physci/repo/...` |
-| `o2_min` | float | Minimum oxygen percentage (numeric for UI sliders) | `12`, `21.5`, `17` |
-| `o2_max` | float | Maximum oxygen percentage (numeric for UI sliders) | `85`, `22.1`, `40` |
+| `o2_min` | float | Lowest oxygen percentage tested in any gas stream (numeric for UI sliders) | `12`, `21.5`, `17` |
+| `o2_max` | float | Highest oxygen percentage tested in any gas stream, **including burner-flow O2 in inverse-flame tests**. For chamber air, read `o2_percent` | `85`, `22.1`, `40` |
 | `study_type` | enum/string | Nature of the investigation | `flight`, `modeling`, or `ground` |
 | `notes` | string | Important scientific caveats and exploration context | High O2 burner flow, partial gravity, non-combustion |
 
@@ -38,17 +39,21 @@ Any **blank/empty cell** indicates that the value was **unknown or not reported*
 
 ## 2. Unit Conversions & Numerical Filters
 
-- **Pressure (`pressure_psi`):** Where explicit numeric pressure values were reported in atmospheres, they have been converted to PSI using standard atmospheric conversion:
-  $$\text{1 atm} = 14.696\text{ psi}$$
-  - `cfi`: $0.25\text{--}5\text{ atm} \approx 3.7\text{--}73.5\text{ psi}$
-  - `flex`: $0.5\text{--}1.5\text{ atm} \approx 7.3\text{--}22.0\text{ psi}$
+- **Pressure (`pressure_psi`):** Pressures reported in other units were converted to PSI:
+  $$\text{1 atm} = 14.696\text{ psi} \qquad \text{1 bar} = 14.504\text{ psi} \qquad \text{1 mmHg} = 0.019337\text{ psi}$$
+  - `cfi`: $0.5\text{--}5\text{ atm} \approx 7.3\text{--}73.5\text{ psi}$ (flown, per PSI-39 experiment table; the objective text states 0.25–5 atm)
+  - `flex`: $526\text{--}2320\text{ mmHg}\ (0.69\text{--}3.05\text{ atm}) \approx 10.2\text{--}44.9\text{ psi}$ (flown, per PSI-69 experiment table; the approach text plans 0.5–1.5 atm for LOI tests)
   - `flex2`: $0.5\text{--}3.0\text{ atm} \approx 7.3\text{--}44.1\text{ psi}$
+  - `acme_cfig`: $0.50\text{--}3.31\text{ bar} \approx 7.2\text{--}48.0\text{ psi}$ (PSI-159 experiment tables, column "approx p (bar)")
+  - `acme_flamedesign`: $0.42\text{--}3.01\text{ atm} \approx 6.2\text{--}44.2\text{ psi}$ (PSI-10 experiment tables, initial pressure)
+  - `acme_sflame`: $\sim 1\text{ atm} \approx 14.7\text{ psi}$ (PSI-23 experiment table note)
   - `psi142`: $\text{up to } 20\text{ atm} \approx 294\text{ psi}$
   - `acme_bre`: natively reported in psia ($8.2\text{--}14.7\text{ psia}$)
 - **Numeric $O_2$ & Pressure Coverage (Note for Person 4):**
   - Only **10 of 24** rows contain numeric $O_2$ bounds (`o2_min`, `o2_max`).
-  - Only **5 of 24** report pressure, as text (e.g., `"up to 294 psi (20 atm)"`, `"8.2 - 14.7 psia"`).
+  - Only **8 of 24** report pressure, as text (e.g., `"up to 294 psi (20 atm)"`, `"8.2 - 14.7 psia"`).
   - UI sliders and filters must provide a **"Show All / Include Unspecified"** setting to prevent inadvertently filtering out experiments whose exact environmental numbers were unlisted.
+  - `o2_max` includes burner-flow oxygen for `acme_cfig` and `acme_flamedesign` (both 85%). A slider labelled "cabin oxygen" should not treat 85% as chamber air.
 
 ---
 
@@ -75,7 +80,7 @@ The `topic` column represents **primary operational relevance**, not an absolute
 
 - **No Dedicated Partial-Gravity Flight Data in PSI:** NASA's PSI database does not currently contain dedicated lunar ($0.16g$) or Martian ($0.38g$) flight experiments.
 - **`acme_efield` (Partial-Gravity Analogue):** ACME E-FIELD is the **only investigation** in this dataset directly addressing partial gravity: the electric field acted on the flame's ions to mimic partial gravity.
-- **`acme_cfig`:** Tested oxygen up to 85% in the burner flow (ambient 12–21%), the highest oxygen level in this dataset. This is not a whole-chamber atmosphere, so treat Moon-base relevance as indirect.
+- **`acme_cfig`:** Two kinds of test. Normal-flame tests burned in chamber air of **18–40% O2** at 0.5–3 bar. Inverse-flame tests fed up to **85% O2 through the burner** into a fuel-filled chamber. The 85% figure is burner flow, not chamber air. The 18–40% chamber-air tests are the ones that matter for Moon-base conditions (section 6).
 - **`daft` (Non-Combustion Test):** DAFT and DAFT-2 evaluated particulate counter hardware in microgravity using inert Arizona Road Dust (ARD). No fuel was burned; `fuel_type` is left blank.
 - **`psi142` (Ground Experiment at High Pressure):** Operated at up to 20 atm in a ground laboratory counterflow burner with `gravity = normal gravity`. Due to extreme non-spacecraft conditions, its relevance score to habitable spacecraft design should be considered low.
 
@@ -83,32 +88,58 @@ The `topic` column represents **primary operational relevance**, not an absolute
 
 ## 6. What the Data Says About Moon-Base Conditions
 
-Future lunar exploration habitats (e.g., Artemis base camps) are slated to operate under **reduced pressure and elevated oxygen** (typically $\ge 30\%\text{ } O_2$ and $\le 10.2\text{ psi}$ / $70.3\text{ kPa}$) to reduce EVA prebreathe times while preventing hypoxia.
+Per the challenge brief, a Moon base is expected to run at **30% oxygen or more** and **10.2 psi or less** (70.3 kPa), to shorten prebreathe time before spacewalks.
 
-Querying `data/investigations.csv` reveals critical coverage insights and gaps:
+We checked this in two steps: a range screen on the CSV, then a test-by-test check against the experiment tables PSI publishes with each investigation.
 
-### A. Oxygen Coverage ($\ge 30\%\text{ } O_2$)
-Only **4 of 24** investigations evaluated oxygen concentrations reaching 30% or higher:
-1. **`acme_cfig`:** Tested oxygen up to **85% $O_2$** in the burner flow (ambient 12–21%), the highest oxygen level in this dataset. This is not a whole-chamber atmosphere, so treat Moon-base relevance as indirect.
-2. **`acme_bre`:** Tested ambient $O_2$ concentrations from **21% up to 40%**.
-3. **`flex2`:** Tested ambient oxygen mole fractions from **17% up to 40%**.
-4. **`acme_sflame`:** Evaluated enriched atmospheres up to **~30% $O_2$**.
+### A. Range Screen (from the CSV)
+`python data_report.py` compares each row's reported ranges:
+- **6 of 24** experiments have an oxygen range reaching 30% or higher: `acme_cfig`, `acme_flamedesign`, `acme_bre`, `flex`, `flex2`, `acme_sflame`.
+- **5 of those 6** also have a pressure range reaching 10.2 psi or lower. The exception is `acme_sflame`, which ran at ~1 atm.
+- 14 of 24 rows report no oxygen and 16 of 24 report no pressure, so they cannot be screened at all.
 
-### B. Pressure Coverage ($\le 10.2\text{ psi}$)
-Only **2 of the 4 elevated-oxygen investigations** also evaluated pressures within the lunar habitat regime ($\le 10.2\text{ psi}$):
-1. **`acme_bre` (Direct Match):** Explicitly designed around NASA Exploration Atmospheres. It simultaneously evaluated:
-   - **$8.2\text{ psia}$ with $34\%\text{ } O_2$**
-   - **$10.2\text{ psia}$ with $26.5\%\text{ } O_2$**
-   - *Key finding:* Flames that self-extinguished in normal air (21% $O_2$) sustained ongoing combustion in elevated-oxygen atmospheres even without ventilation.
-2. **`flex2` (Parametric Overlap):** Evaluated pressures down to $0.5\text{ atm}$ ($7.3\text{ psi}$) and $O_2$ up to 40% across its droplet matrix, although tests were conducted as parametric sweeps.
+A range overlap does **not** mean high oxygen and low pressure happened in the same test. Section B checks that.
 
-### C. The Partial-Gravity Gap
+### B. Test-by-Test Check (from the PSI experiment tables)
+
+Only chamber air (ambient O2) counts here, because that is what a Moon-base cabin would be.
+
+| `id` | Ambient O2 ≥ 30% **and** ≤ 10.2 psi in the same test? | Evidence |
+|---|---|---|
+| `acme_cfig` | **Yes: 20 tests, 17 with hot ignition** | PSI-159 normal-flame table: 33.2–39.3% ambient O2 at 0.5 atm (listed as 0.50665 bar, 7.35 psi), on 3 test days. Fuels: 50% butane, 30% butane, 30% ethane (N2-diluted). The 17 hot flames burned 13–274 s |
+| `acme_bre` | Likely, but not confirmed | PSI-20 objectives name **8.2 psia with 34% O2** as a planned atmosphere (with 10.2 psia/26.5% and 14.7 psia/21%). 34% O2 appears on 13 of 18 flight test days, but the log states: *"The chamber pressures were also varied but are not identified in this summary table."* |
+| `flex2` | Not confirmed | PSI-68 table lists O2 options (0.17, 0.21, 0.25, 0.30) and pressure options (0.5–3.0 atm) for every fuel, not a per-test log |
+| `flex` | No, but within 0.13–0.30 psi | PSI-69 table: 17 methanol and heptane droplet tests at 30% or 34% O2 ran at 10.33–10.50 psi (~0.7 atm). None ended in extinction: 2 burned to completion and 15 ended in "Disruption". 16 have recorded burn times of 4–24 s |
+| `acme_flamedesign` | No | PSI-10: ambient O2 reached 40% only at 13.7–19.1 psi. Its low-pressure, high-O2 tests were inverse flames (O2 from the burner) |
+| `acme_sflame` | No | PSI-23 table: ~30% O2 tests ran at ~1 atm |
+
+Inverse-flame tests are left out of the count: 28 in `acme_cfig` and 18 in `acme_flamedesign` had ≥ 30% burner O2 at ≤ 10.2 psi, but the chamber was full of fuel, not air.
+
+**What BRE does add:** PSI-20 reports that flames *"in a normal atmosphere of 21% oxygen self-extinguished in a short time"* without airflow, while *"ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres."* Cutting ventilation is a standard step in putting out a spacecraft fire, so this matters for Moon-base atmospheres. PSI calls these results *"still preliminary."*
+
+**What "hot ignition" means in the PSI-159 table.** PSI does not define the column, so this reading comes from the table itself. CFI-G studies cool flames, which PSI-159 describes as peaking at 500–1000 K. "Hot ignition: Yes" marks a test where an ordinary hot flame ignited. Of the 3 "No" rows among the 20 matches:
+- 2 are commented *"direct cool - no hot ignition"*, meaning a cool flame formed without a hot flame first.
+- 1 (test 21106 F4) is commented *"hot flame"* and burned for 22 s despite the "No".
+
+So 17 is the conservative count of hot flames at Moon-base conditions.
+
+**Caveats on the `acme_cfig` result:**
+- The pressure column is labelled "approx p (bar)" in the source.
+- O2 values are the chamber reading before each test; O2 drops during a test as the chamber fills with combustion products.
+- CFI-G was designed to study cool flames, not cabin fire safety. These are diluted gaseous fuels on a spherical porous burner, not cabin materials.
+
+### C. Headline (offered to Person 4 and Person 5)
+> Of the 24 NASA microgravity combustion investigations in PSI, only one, ACME CFI-G, has test-by-test records of flames burning at likely Moon-base conditions (30% or more oxygen, 10.2 psi or less): 17 hot-flame ignitions at 33–39% oxygen and 7.35 psi, all with gaseous fuels. FLEX came within 0.1–0.3 psi: 17 liquid-droplet tests (methanol and heptane) burned at 30–34% oxygen and 10.3–10.5 psi. No solid-material fire test is confirmed at those conditions, and none was run in true partial gravity.
+
+### D. The Partial-Gravity Gap
 - **Zero actual partial-gravity ($0.16g$ lunar / $0.38g$ Martian) flight test data** currently exists in NASA's PSI database.
 - **`acme_efield`** is the only entry that addresses this gap, where the electric field acted on flame ions to mimic partial gravity.
 
 ---
 
 ## 7. Data Completeness Summary
+
+Counts come from `python data_report.py`. Re-run it after any edit to the CSV and update this table.
 
 | Column | Filled Count | Completeness | Notes / Handling for UI |
 |---|---|---|---|
@@ -127,11 +158,29 @@ Only **2 of the 4 elevated-oxygen investigations** also evaluated pressures with
 | `hardware` | 20 / 24 | **83.3%** | Blank for CFD modeling grants without flight hardware |
 | `airflow` | 12 / 24 | **50.0%** | Reported for duct/flow experiments; chamber tests are often quiescent |
 | `o2_percent` / `o2_min` / `o2_max` | 10 / 24 | **41.7%** | Numeric slider filter **must include 'Show All'** |
-| `pressure_psi` | 5 / 24 | **20.8%** | Reported as text; pressure filter **must include 'Show All'** |
-| `notes` | 5 / 24 | **20.8%** | Specific scientific caveats and exploration context |
+| `notes` | 10 / 24 | **41.7%** | Specific scientific caveats and exploration context |
+| `pressure_psi` | 8 / 24 | **33.3%** | Reported as text; pressure filter **must include 'Show All'** |
 
 ---
 
 ## 8. How This Was Checked
 
-Rows were compiled from NASA PSI investigation pages. The following rows were checked against their primary source pages: `acme_cfig`, `acme_bre`, `acme_sflame`, `flex2`, `saffire2`, `daft`, `psi142`, and `acme_efield`. Other cells were extracted directly from PSI overview summaries and were not independently re-verified.
+All rows were compiled from the PSI investigation overview text (November 14, 2026). The checks since then cover two different things:
+
+- **Oxygen and pressure: checked against PSI's per-test data (November 15, 2026).** Each PSI investigation page has an "Experimental table" CSV listing the actual test conditions. The tables were downloaded through the data service the PSI site itself uses (`psi.nasa.gov/geode-py/ws`). 20 of the 24 investigations have one; the 4 modeling studies (`psi60`, `psi62`, `psi115`, `psi117`) do not. For those 20, the oxygen and pressure values were compared with the tables, including where they appear inside `what_varied` and `notes`. Where a table disagreed with the overview text, the table value was used, because it records what was flown rather than what was planned.
+- **Every other column was not re-verified against the tables.** This covers `objective`, `sensors`, `hardware`, `fuel_detail`, `airflow`, `what_same` and the rest of `what_varied`. They come from PSI overview text only.
+
+Rows changed by the table check:
+
+| `id` | Change | Source |
+|---|---|---|
+| `acme_cfig` | Ambient O2 corrected from "12–21%" to 18–40%; pressure 7.2–48.0 psi added | PSI-159 normal and inverse flame tables |
+| `acme_flamedesign` | O2 20.4–20.7% → 19.8–85% (ambient 19.8–40%, burner up to 85%); pressure 6.2–44.2 psi added | PSI-10 normal and inverse flame tables |
+| `flex` | O2 21% → 12–34%; pressure 7.3–22.0 → 10.2–44.9 psi | PSI-69 table (273 tests) |
+| `cfi` | O2 21% → 17–21%; pressure 3.7–73.5 → 7.3–73.5 psi | PSI-39 table (87 tests) |
+| `bass2` | O2 21.8–22.2% → 13.6–22.2% (N2 vitiation) | PSI-25 table, calibrated initial O2 |
+| `flex2` | O2 max 40% → 30%; conflict noted (approach text says 0.1–0.4) | PSI-68 table vs. approach text |
+| `acme_sflame` | Pressure ~1 atm added | PSI-23 table note |
+| `acme_bre` | Note added: per-test pressures not published | PSI-20 table note |
+
+**PSI coverage (feature check, November 15, 2026).** PSI lists 133 investigations, and 24 are tagged "Combustion Science". All 24 are in this dataset, so no rows were missing. One related non-combustion entry exists: PSI-179, Aerosol Sampling Experiment (ASE), under Complex Fluids. It is passive sampling of ISS cabin particles, not a fire test, so it was not added.
