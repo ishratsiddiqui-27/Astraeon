@@ -1,7 +1,18 @@
 import csv
+import os
 import sys
 
-def validate(filename="investigations.csv"):
+def validate(filename=None):
+    if filename is None:
+        if os.path.exists("data/investigations.csv"):
+            filename = "data/investigations.csv"
+        else:
+            filename = "investigations.csv"
+
+    if not os.path.exists(filename):
+        print(f"Error: file '{filename}' not found.")
+        sys.exit(1)
+
     with open(filename, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
         headers = next(reader)
