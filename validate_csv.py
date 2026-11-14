@@ -25,6 +25,8 @@ def validate(filename=None):
                 errors.append(f"Line {line_no} ({row[0]}): field 8 ('gravity') is '{row[8]}' instead of microgravity/normal gravity")
             elif row[13] not in ["prevention", "detection", "suppression"]:
                 errors.append(f"Line {line_no} ({row[0]}): field 13 ('topic') is '{row[13]}' which is not prevention/detection/suppression")
+            elif row[17] not in ["flight", "modeling", "ground"]:
+                errors.append(f"Line {line_no} ({row[0]}): field 17 ('study_type') is '{row[17]}' which is not flight/modeling/ground")
 
         if errors:
             print("Validation FAILED:")
