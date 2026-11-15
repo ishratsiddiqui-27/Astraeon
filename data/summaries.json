@@ -140,7 +140,7 @@
   "psi142": {
     "simple_summary": "This ground-based lab study in normal gravity burned dimethyl ether (DME), n-heptane and methane in a counterflow burner, where two gas streams flow toward each other. Pressure went up to 20 atm (294 psi), and the tests varied the oxygen level, the dilution, the fuel and whether ozone was added to sensitize the flame. Laser imaging of formaldehyde (CH2O PLIF) and temperature measurements were used to map the limits where cool flames can burn, building on FLEX data.",
     "why_it_matters": "It links when flames can burn to when they go out, although its high-pressure ground conditions are far from a spacecraft habitat.",
-    "moon_status": "not_a_match",
-    "moon_takeaway": "Not a match: this ground-based lab study in normal gravity ran at pressures up to 294 psi, far from Moon-base conditions."
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: this ground-based lab study in normal gravity reports pressures up to 294 psi but no lowest pressure or oxygen level, so it cannot be compared with Moon-base conditions."
   }
 }
