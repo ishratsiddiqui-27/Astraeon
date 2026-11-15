@@ -151,5 +151,8 @@ def moon_chart(max_psi: float = 50, height: int = 420, selected: tuple[float, fl
         "title": {"text": title, "subtitle": subtitle, "anchor": "start"},
         "width": "container",
         "height": height,
+        # Streamlit's theme fits the WHOLE chart (title + legends + plot) into `height`, which squashes
+        # the plot. fit-x fits only the width to the page and keeps `height` for the plot itself.
+        "autosize": {"type": "fit-x", "contains": "padding"},
         "layer": layers,
     }

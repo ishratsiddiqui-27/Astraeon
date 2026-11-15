@@ -50,9 +50,9 @@ st.caption("Pick an atmosphere, or move the sliders, to see which real flight te
 st.segmented_control("Atmosphere", [*ATMOSPHERES, CUSTOM], key="atmosphere", on_change=apply_preset)
 left, right = st.columns(2)
 with left:
-    st.slider("Chamber oxygen (%)", 10.0, 46.0, step=0.5, key="o2", on_change=mark_custom)
+    st.slider("Chamber oxygen (%)", 10.0, 46.0, step=0.5, format="%.1f", key="o2", on_change=mark_custom)
 with right:
-    st.slider("Pressure (psi)", 0.0, 50.0, step=0.1, key="psi", on_change=mark_custom)
+    st.slider("Pressure (psi)", 0.0, 50.0, step=0.1, format="%.1f", key="psi", on_change=mark_custom)
 o2, psi = st.session_state.o2, st.session_state.psi
 
 preset = ATMOSPHERES.get(st.session_state.atmosphere)
