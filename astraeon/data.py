@@ -205,6 +205,19 @@ def tests_near(o2_percent: float, pressure_psi: float, o2_tol: float = 3.0, psi_
             "o2_tol": o2_tol, "psi_tol": psi_tol}
 
 
+def load_research_gaps() -> list[dict]:
+    """data/research_gaps.json (Person 3): what the data can't tell us yet. Each gap gets its id and
+    related_names (card-sized names of its related experiments). Empty if the file doesn't exist."""
+    path = DATA_DIR / "research_gaps.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    names = {r["id"]: short_name(r["name"], r["source_link"]) for r in load_investigations()}
+    return [{"id": key, **gap, "related_names": [names.get(rid, rid) for rid in gap.get("related_experiments", [])]}
+            for key, gap in data.items()]
+
+
 def load_incidents() -> list[dict]:
     """data/incident_summaries.json (Person 3) as a list, oldest first. Each incident gets its id and
     related_names (card-sized names of its related experiments). Empty if the file doesn't exist."""

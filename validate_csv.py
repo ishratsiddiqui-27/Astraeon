@@ -26,6 +26,9 @@ TIMELINE = os.path.join("data", "timeline.csv")
 GLOSSARY = os.path.join("data", "glossary.json")
 INCIDENTS = os.path.join("data", "incident_summaries.json")
 ATMOSPHERES = os.path.join("data", "atmospheres.json")
+GAPS = os.path.join("data", "research_gaps.json")
+GAP_FIELDS = ["title", "summary", "evidence", "related_experiments", "source"]
+NOTES = os.path.join("data", "DATA_NOTES.md")
 INCIDENT_FIELDS = ["name", "date", "summary", "related_experiments", "data_note", "sources"]
 
 INV_COLUMNS = ["id", "name", "fuel_type", "fuel_detail", "hardware", "o2_percent", "pressure_psi",
@@ -61,7 +64,7 @@ TIMELINE_COLUMNS = ["id", "psi_id", "investigation_start", "investigation_end", 
 
 # A number not glued to letters, so "CO2" or "C2H4" don't count. Accepts ".33".
 NUMBER = re.compile(r"(?<![A-Za-z0-9.])(\d+(?:\.\d+)?|\.\d+)")
-NEGATION = re.compile(r"\b(not|no|never|isn't|wasn't|doesn't)\b", re.I)
+NEGATION = re.compile(r"\b(not|no|never|isn't|wasn't|doesn't|zero)\b|(?<![\d.])0(?![\d.])", re.I)
 
 errors, warnings = [], []
 
@@ -303,6 +306,87 @@ def check_incidents(inv):
     print(f"  {INCIDENTS}: {len(data)} incidents")
 
 
+def cited_notes_text(source):
+    """Text of the DATA_NOTES.md sections a source cites, e.g. 'DATA_NOTES sections 6B and 6C'
+    -> section 6 subsection B + section 6 subsection C. A bare number ('5') means the whole section."""
+    if "DATA_NOTES" not in source or not os.path.exists(NOTES):
+        return ""
+    text = open(NOTES, encoding="utf-8").read()
+    index = {}
+    for part in re.split(r"(?m)^## ", text)[1:]:
+        top = re.match(r"(\d+)\.", part)
+        if not top:
+            continue
+        index[top.group(1)] = part
+        for sub in re.split(r"(?m)^### ", part)[1:]:
+            letter = re.match(r"([A-Z])\.", sub)
+            if letter:
+                index[top.group(1) + letter.group(1)] = sub
+    cited = re.findall(r"\b(\d+[A-Z]?)\b", source.split("DATA_NOTES", 1)[1])
+    return " ".join(index.get(key, "") for key in cited)
+
+
+def dataset_counts(inv):
+    """Counts computed from investigations.csv that gap texts may quote (rows, blanks, categories)."""
+    rows = list(inv.values())
+    no_o2 = sum(not r["o2_percent"].strip() for r in rows)
+    no_p = sum(not r["pressure_psi"].strip() for r in rows)
+    neither = sum(not r["o2_percent"].strip() and not r["pressure_psi"].strip() for r in rows)
+    counts = {0, len(rows), no_o2, no_p, neither, len(rows) - no_o2, len(rows) - no_p}
+    for col in ("gravity", "study_type", "topic", "fuel_type"):
+        values = [r[col] for r in rows]
+        counts |= {values.count(v) for v in set(values)}
+    return {float(c) for c in counts}
+
+
+def check_research_gaps(inv):
+    """data/research_gaps.json: {gap_id: {title, summary, evidence, related_experiments, source}}.
+    Numbers in summary/evidence must trace to the related experiments' rows, the DATA_NOTES.md sections
+    the gap cites, or counts computed from investigations.csv (warning otherwise)."""
+    try:
+        with open(GAPS, encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        errors.append(f"{GAPS}: not valid JSON ({e})")
+        return
+    if not isinstance(data, dict):
+        errors.append(f"{GAPS}: should be an object keyed by gap id")
+        return
+    counts = dataset_counts(inv)
+    for key, gap in data.items():
+        where = f"{GAPS} ({key})"
+        if not isinstance(gap, dict):
+            errors.append(f"{where}: should be an object with {', '.join(GAP_FIELDS)}")
+            continue
+        missing = [f for f in GAP_FIELDS if f not in gap]
+        if missing:
+            errors.append(f"{where}: missing {', '.join(missing)}")
+            continue
+        for field in ("title", "summary", "evidence", "source"):
+            if not isinstance(gap[field], str) or not gap[field].strip():
+                errors.append(f"{where}: '{field}' is blank")
+        related = gap["related_experiments"]
+        if not isinstance(related, list):
+            errors.append(f"{where}: related_experiments must be a list of ids")
+            continue
+        unknown = [rid for rid in related if rid not in inv]
+        if unknown:
+            errors.append(f"{where}: related_experiments not in {INV}: {', '.join(map(str, unknown))}")
+        allowed = counts | THRESHOLD_NUMBERS | numbers_in(cited_notes_text(str(gap["source"])))
+        for rid in related:
+            if rid in inv:
+                allowed |= numbers_in(" ".join(inv[rid].values()))
+        for field in ("summary", "evidence"):
+            for s in sentences(str(gap[field])):
+                stray = sorted(numbers_in(s) - allowed)
+                if stray:
+                    warnings.append(f"{where} {field}: number(s) {', '.join(f'{n:g}' for n in stray)} not in the "
+                                    f"related rows, the cited DATA_NOTES sections, or counts from {INV}: \"{s[:140]}\"")
+                if re.search(r"partial[- ]gravity", s, re.I) and not NEGATION.search(s):
+                    warnings.append(f"{where}: no PSI experiment ran in partial gravity: \"{s[:140]}\"")
+    print(f"  {GAPS}: {len(data)} gaps")
+
+
 def check_atmospheres():
     """data/atmospheres.json: {id: {name, o2_percent, pressure_psi, note, source}} preset atmospheres."""
     try:
@@ -411,7 +495,9 @@ def main():
         check_incidents(inv)
     if os.path.exists(ATMOSPHERES):
         check_atmospheres()
-    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY, INCIDENTS, ATMOSPHERES):
+    if os.path.exists(GAPS) and inv:
+        check_research_gaps(inv)
+    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY, INCIDENTS, ATMOSPHERES, GAPS):
         if not os.path.exists(path):
             print(f"  {path}: not found, skipped")
 

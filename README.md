@@ -33,6 +33,7 @@
 | `data/summaries.json` | Plain-language summary, why it matters, `moon_status` badge and `moon_takeaway` per experiment | **Person 3** |
 | `data/glossary.json` | 24 terms with one-sentence definitions, for hover help | **Person 3** |
 | `data/incident_summaries.json` | Apollo 1, Apollo 13 and the Mir fire: date, summary, related experiments, sources | **Person 3** |
+| `data/research_gaps.json` | What the data can't tell us yet: 4 gaps with title, summary, evidence and related experiments (`load_research_gaps()`) | **Person 3** |
 
 ### Using the data in the Streamlit app
 
