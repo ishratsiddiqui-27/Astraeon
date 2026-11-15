@@ -24,6 +24,8 @@ EVIDENCE = os.path.join("data", "moon_evidence.csv")
 IMAGES = os.path.join("data", "images.csv")
 TIMELINE = os.path.join("data", "timeline.csv")
 GLOSSARY = os.path.join("data", "glossary.json")
+INCIDENTS = os.path.join("data", "incident_summaries.json")
+INCIDENT_FIELDS = ["name", "date", "summary", "related_experiments", "data_note", "sources"]
 
 INV_COLUMNS = ["id", "name", "fuel_type", "fuel_detail", "hardware", "o2_percent", "pressure_psi",
                "airflow", "gravity", "sensors", "objective", "what_varied", "what_same", "topic",
@@ -259,6 +261,47 @@ def check_timeline(inv):
     print(f"  {TIMELINE}: {len(rows)} rows")
 
 
+def check_incidents(inv):
+    """data/incident_summaries.json: {incident_id: {name, date, summary, related_experiments, data_note, sources}}."""
+    try:
+        with open(INCIDENTS, encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        errors.append(f"{INCIDENTS}: not valid JSON ({e})")
+        return
+    if not isinstance(data, dict):
+        errors.append(f"{INCIDENTS}: should be an object keyed by incident id")
+        return
+    for key, entry in data.items():
+        where = f"{INCIDENTS} ({key})"
+        if not isinstance(entry, dict):
+            errors.append(f"{where}: should be an object with {', '.join(INCIDENT_FIELDS)}")
+            continue
+        missing = [f for f in INCIDENT_FIELDS if f not in entry]
+        if missing:
+            errors.append(f"{where}: missing {', '.join(missing)}")
+            continue
+        for field in ("name", "summary", "data_note"):
+            if not isinstance(entry[field], str) or not entry[field].strip():
+                errors.append(f"{where}: '{field}' is blank")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(entry["date"])):
+            errors.append(f"{where}: date '{entry['date']}' must be YYYY-MM-DD")
+        related = entry["related_experiments"]
+        if not isinstance(related, list):
+            errors.append(f"{where}: related_experiments must be a list of ids (it can be empty)")
+        else:
+            unknown = [rid for rid in related if rid not in inv]
+            if unknown:
+                errors.append(f"{where}: related_experiments not in {INV}: {', '.join(map(str, unknown))}")
+        sources = entry["sources"]
+        if not isinstance(sources, list) or not sources or not all(str(s).startswith("http") for s in sources):
+            errors.append(f"{where}: sources must be a non-empty list of links")
+        for s in sentences(str(entry.get("summary", "")) + " " + str(entry.get("data_note", ""))):
+            if re.search(r"partial[- ]gravity", s, re.I) and not NEGATION.search(s):
+                warnings.append(f"{where}: no PSI experiment ran in partial gravity: \"{s[:140]}\"")
+    print(f"  {INCIDENTS}: {len(data)} incidents")
+
+
 def check_glossary():
     try:
         with open(GLOSSARY, encoding="utf-8") as f:
@@ -332,7 +375,9 @@ def main():
         check_timeline(inv)
     if os.path.exists(GLOSSARY):
         check_glossary()
-    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY):
+    if os.path.exists(INCIDENTS) and inv:
+        check_incidents(inv)
+    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY, INCIDENTS):
         if not os.path.exists(path):
             print(f"  {path}: not found, skipped")
 

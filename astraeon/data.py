@@ -169,6 +169,23 @@ def load_glossary() -> dict:
         return json.load(f)
 
 
+def load_incidents() -> list[dict]:
+    """data/incident_summaries.json (Person 3) as a list, oldest first. Each incident gets its id and
+    related_names (card-sized names of its related experiments). Empty if the file doesn't exist."""
+    path = DATA_DIR / "incident_summaries.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    names = {r["id"]: short_name(r["name"], r["source_link"]) for r in load_investigations()}
+    incidents = []
+    for key, entry in data.items():
+        item = {"id": key, **entry}
+        item["related_names"] = [names.get(rid, rid) for rid in entry.get("related_experiments", [])]
+        incidents.append(item)
+    return sorted(incidents, key=lambda i: i.get("date", ""))
+
+
 def load_all_records() -> list[dict]:
     """One dict per experiment: investigations + rankings + summaries + Moon evidence + timeline
     + primary image. Missing optional files leave their fields blank instead of failing."""

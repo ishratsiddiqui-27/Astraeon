@@ -29,6 +29,9 @@
 | `data/images.csv`, `assets/images/` | Real experiment photos from PSI, only those with a stated license (CC0-1.0) | **Person 1** |
 | `data/timeline.csv` | Investigation start and end dates and flight platform from PSI | **Person 1** |
 | `build_psi_extras.py` | Rebuilds `images.csv`, `assets/images/` and `timeline.csv` from NASA PSI (needs internet) | **Person 1** |
+| `data/summaries.json` | Plain-language summary, why it matters, `moon_status` badge and `moon_takeaway` per experiment | **Person 3** |
+| `data/glossary.json` | 24 terms with one-sentence definitions, for hover help | **Person 3** |
+| `data/incident_summaries.json` | Apollo 1, Apollo 13 and the Mir fire: date, summary, related experiments, sources | **Person 3** |
 
 ### Using the data in the Streamlit app
 
@@ -56,7 +59,7 @@ for _, row in df.iterrows():
         st.text(f"Pressure: {show(row['pressure_psi'])}")
 ```
 
-`load_glossary()` returns Person 3's `{term: definition}` for hover help.
+`load_glossary()` returns Person 3's `{term: definition}` for hover help. `load_incidents()` returns the three incidents oldest first, each with `related_names` for linking to experiment cards.
 
 Notes for the app:
 - For an oxygen filter, use the numeric `o2_min` / `o2_max` columns, not `o2_percent` (that one is text). Keep "not reported" experiments visible.
