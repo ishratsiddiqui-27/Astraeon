@@ -9,9 +9,9 @@
   "partial_gravity": {
     "title": "Partial gravity (Moon 0.16g, Mars 0.38g)",
     "summary": "No experiment in the PSI database was run in lunar or Martian partial gravity, so flames at Moon gravity are not covered by this dataset. ACME E-FIELD is not a stand-in, because it is not a partial-gravity test.",
-    "evidence": "0 partial-gravity flight experiments in PSI. 23 of 24 experiments ran in microgravity and 1 (psi142) is a ground study in normal gravity.",
+    "evidence": "0 partial-gravity flight experiments in PSI. 23 of 24 are microgravity studies (19 flight experiments and 4 modeling studies) and 1 (psi142) is a ground study in normal gravity.",
     "related_experiments": ["acme_efield"],
-    "source": "DATA_NOTES sections 5, 6D and 7"
+    "source": "DATA_NOTES sections 3, 5, 6D and 7"
   },
   "pressure_records": {
     "title": "Missing per-test pressure records",
