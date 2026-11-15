@@ -1,0 +1,747 @@
+id,psi_id,test,fuel,o2_percent,pressure_psi,pressure_as_published,outcome,burn_time_s,in_moon_zone,source_table
+acme_cfig,PSI-159,21088A1,ethane,39.39,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,50,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 B1,ethane,38.98,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,43,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 C1,ethane,38.63,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,42,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 D1,ethane,38.29,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,61,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 F1,ethane,38.04,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,28,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 G1,ethane,37.99,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,42,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 H1,ethane,37.61,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,62,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 J1,ethane,37.34,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,37,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 K1,ethane,36.96,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,98,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 H2,ethane,36.45,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,127,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 M4,ethane,21.01,14.70,1.0133 bar,Hot ignition: Yes; end: SE,13,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 L1,ethane,20.96,14.70,1.0133 bar,Hot ignition: Yes; end: SE,9,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 N1,ethane,18.02,14.70,1.0133 bar,Hot ignition: Yes; end: SE,7,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21088 P1,ethane,17.97,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102A1,50% butane,39.57,14.70,1.0133 bar,Hot ignition: Yes; end: SE,40,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C1,50% butane,39.30,14.70,1.0133 bar,Hot ignition: Yes; end: SE,41,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 B1,50% butane,39.05,14.70,1.0133 bar,Hot ignition: Yes; end: SE,38,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C2,50% butane,38.81,14.70,1.0133 bar,Hot ignition: Yes; end: FT,63,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C3,50% butane,38.62,14.70,1.0133 bar,Hot ignition: Yes; end: SE,82,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C4,50% butane,38.25,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C5,50% butane,38.25,14.70,1.0133 bar,Hot ignition: Yes; end: FT,43,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C6,50% butane,38.12,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C7,50% butane,38.12,14.70,1.0133 bar,Hot ignition: Yes; end: FT,18,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 C8,50% butane,38.07,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M1,50% butane,23.41,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M2,50% butane,23.36,14.70,1.0133 bar,Hot ignition: Yes; end: SE,14,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M3,50% butane,23.33,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M4,50% butane,23.33,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M5,50% butane,23.33,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21102 M6,50% butane,23.33,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106A4,50% butane,39.26,7.35,0.50665 bar,Hot ignition: Yes; end: SE,60,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 B1,50% butane,38.46,7.35,0.50665 bar,Hot ignition: Yes; end: SE,62,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 C1,50% butane,37.72,7.35,0.50665 bar,Hot ignition: Yes; end: SE,63,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 D1,50% butane,36.93,7.35,0.50665 bar,Hot ignition: Yes; end: SE,120,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 F1,50% butane,35.85,7.35,0.50665 bar,Hot ignition: Yes; end: FT,72,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 F2,50% butane,35.42,7.35,0.50665 bar,Hot ignition: No; end: -,,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 F3,50% butane,35.42,7.35,0.50665 bar,Hot ignition: Yes; end: FT,13,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 F4,50% butane,35.38,7.35,0.50665 bar,Hot ignition: No; end: FT,22,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 F5,50% butane,35.29,7.35,0.50665 bar,Hot ignition: No; end: -,,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 G6,50% butane,20.97,7.35,0.50665 bar,Hot ignition: Yes; end: SE,20,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 G7,50% butane,20.86,7.35,0.50665 bar,Hot ignition: Yes; end: SE,20,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 G9,50% butane,20.75,7.35,0.50665 bar,Hot ignition: Yes; end: SE,14,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 H1,50% butane,20.67,7.35,0.50665 bar,Hot ignition: No; end: -,,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21106 H2,50% butane,20.67,7.35,0.50665 bar,Hot ignition: No; end: -,,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112A1,propane,39.54,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,43,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 A2,propane,39.40,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,44,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 A3,propane,39.13,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,95,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 A4,propane,38.68,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,185,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 A5,propane,37.95,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,24,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C1,propane,37.77,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,29,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C2,propane,37.71,13.70,0.9443956 bar,Hot ignition: Yes; end: FT,29,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 A6,propane,37.65,13.70,0.9443956 bar,Hot ignition: Yes; end: SE,259,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C3,propane,36.64,13.70,0.9443956 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C4,propane,36.64,13.70,0.9443956 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C5,propane,36.64,13.70,0.9443956 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 C6,propane,36.64,13.70,0.9443956 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 F1,propane,21.25,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 F2,propane,21.25,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 F3,propane,21.22,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 F4,propane,21.20,14.70,1.0133 bar,Hot ignition: Yes; end: SE,10,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 F5,propane,21.18,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 H1,propane,21.18,14.70,1.0133 bar,Hot ignition: Yes; end: SE,12,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 H2,propane,21.16,14.70,1.0133 bar,Hot ignition: Yes; end: SE,11,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21112 H3,propane,21.14,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125A1,30% butane,39.45,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A2,30% butane,39.45,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A3,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A4,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A5,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A6,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A7,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A8,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 A9,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 H1,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 H2,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 H3,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 H4,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 J1,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 H5,30% butane,39.41,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 K1,30% butane,39.41,14.70,1.0133 bar,Hot ignition: Yes; end: SE,35,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 K2,30% butane,38.92,14.70,1.0133 bar,Hot ignition: Yes; end: SE,17,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 K3,30% butane,38.44,14.70,1.0133 bar,Hot ignition: Yes; end: FT,125,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D1,30% butane,21.11,14.70,1.0133 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D2,30% butane,21.11,14.70,1.0133 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D3,30% butane,21.10,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D4,30% butane,21.10,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D5,30% butane,21.10,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21125 D6,30% butane,21.10,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130A1,30% propane,21.07,29.39,2.0266 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A2,30% propane,21.07,29.39,2.0266 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A3,30% propane,21.07,29.39,2.0266 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A4,30% propane,21.07,29.39,2.0266 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A5,30% propane,21.07,29.39,2.0266 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A6,30% propane,21.06,29.39,2.0266 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A7,30% propane,21.06,29.39,2.0266 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A8,30% propane,21.06,29.39,2.0266 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 A9,30% propane,21.06,29.39,2.0266 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 M1,30% propane,21.06,29.39,2.0266 bar,Hot ignition: Yes; end: SE,6,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 M2,30% propane,21.05,29.39,2.0266 bar,Hot ignition: Yes; end: SE,7,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 M3,30% propane,21.02,29.39,2.0266 bar,Hot ignition: Yes; end: SE,5,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G1,30% propane,21.67,44.09,3.0399 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G2,30% propane,21.67,44.09,3.0399 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G3,30% propane,21.67,44.09,3.0399 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G4,30% propane,21.67,44.09,3.0399 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G5,30% propane,21.67,44.09,3.0399 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G6,30% propane,21.67,44.09,3.0399 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 G7,30% propane,21.67,44.09,3.0399 bar,Hot ignition: Yes; end: SE,1,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 N1,30% propane,21.67,44.09,3.0399 bar,Hot ignition: Yes; end: SE,6,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 N2,30% propane,21.66,44.09,3.0399 bar,Hot ignition: Yes; end: SE,6,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 N3,30% propane,21.64,44.09,3.0399 bar,Hot ignition: Yes; end: SE,5,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 N4,30% propane,21.64,44.09,3.0399 bar,Hot ignition: Yes; end: SE,5,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21130 N5,30% propane,21.64,44.09,3.0399 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137A1,30% propane,39.96,14.70,1.0133 bar,Hot ignition: Yes; end: SE,19,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A2,30% propane,39.73,14.70,1.0133 bar,Hot ignition: Yes; end: SE,39,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A3,30% propane,39.48,14.70,1.0133 bar,Hot ignition: Yes; end: SE,124,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 B1,30% propane,38.95,14.70,1.0133 bar,Hot ignition: Yes; end: FT,127,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 B2,30% propane,37.12,14.70,1.0133 bar,Hot ignition: Yes; end: FT,147,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A4,30% propane,35.75,14.70,1.0133 bar,Hot ignition: Yes; end: SE,35,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A5,30% propane,35.57,14.70,1.0133 bar,Hot ignition: Yes; end: SE,44,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A6,30% propane,35.37,14.70,1.0133 bar,Hot ignition: Yes; end: SE,22,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 A7,30% propane,35.24,14.70,1.0133 bar,Hot ignition: Yes; end: SE,33,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 D1,30% propane,21.00,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 D2,30% propane,20.91,14.70,1.0133 bar,Hot ignition: Yes; end: SE,11,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21137 C1,30% propane,20.89,14.70,1.0133 bar,Hot ignition: Yes; end: SE,8,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153A1,30% ethane,38.87,7.35,0.50665 bar,Hot ignition: Yes; end: SE,59,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 A2,30% ethane,37.59,7.35,0.50665 bar,Hot ignition: Yes; end: SE,88,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 A3,30% ethane,36.39,7.35,0.50665 bar,Hot ignition: Yes; end: SE,258,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 F1,30% ethane,34.08,7.35,0.50665 bar,Hot ignition: Yes; end: SE,44,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 A4,30% ethane,33.49,7.35,0.50665 bar,Hot ignition: Yes; end: FT,56,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 A5,30% ethane,33.24,7.35,0.50665 bar,Hot ignition: Yes; end: FT,274,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C1,30% ethane,39.85,29.39,2.0266 bar,Hot ignition: Yes; end: SE,34,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C2,30% ethane,39.66,29.39,2.0266 bar,Hot ignition: Yes; end: SE,51,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C3,30% ethane,39.48,29.39,2.0266 bar,Hot ignition: Yes; end: SE,123,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 G1,30% ethane,39.20,29.39,2.0266 bar,Hot ignition: Yes; end: SE,131,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C4,30% ethane,38.89,29.39,2.0266 bar,Hot ignition: Yes; end: FT,276,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C5,30% ethane,38.42,29.39,2.0266 bar,Hot ignition: Yes; end: FT,49,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C6,30% ethane,38.36,29.39,2.0266 bar,Hot ignition: Yes; end: SE,44,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21153 C7,30% ethane,38.21,29.39,2.0266 bar,Hot ignition: Yes; end: FT,61,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162A1,30% ethane,39.97,14.70,1.0133 bar,Hot ignition: Yes; end: SE,43,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 A2,30% ethane,39.50,14.70,1.0133 bar,Hot ignition: Yes; end: SE,71,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 A3,30% ethane,39.00,14.70,1.0133 bar,Hot ignition: Yes; end: SE,232,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 B1,30% ethane,37.93,14.70,1.0133 bar,Hot ignition: Yes; end: SE,158,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 A4,30% ethane,37.21,14.70,1.0133 bar,Hot ignition: Yes; end: SE,304,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 C1,30% ethane,21.00,14.70,1.0133 bar,Hot ignition: Yes; end: SE,19,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 C2,30% ethane,20.96,14.70,1.0133 bar,Hot ignition: Yes; end: SE,11,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 C3,30% ethane,20.93,14.70,1.0133 bar,Hot ignition: Yes; end: SE,9,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 C4,30% ethane,20.89,14.70,1.0133 bar,Hot ignition: Yes; end: SE,9,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 C5,30% ethane,20.84,14.70,1.0133 bar,Hot ignition: Yes; end: SE,9,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 D1,30% ethane,20.75,14.70,1.0133 bar,Hot ignition: Yes; end: SE,16,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 F1,30% ethane,20.72,14.70,1.0133 bar,Hot ignition: No; end: -,0,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21162 F2,30% ethane,20.72,14.70,1.0133 bar,Hot ignition: Yes; end: SE,10,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 A1,30% butane,38.86,7.35,0.50665 bar,Hot ignition: Yes; end: SE,21,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 A2,30% butane,38.32,7.35,0.50665 bar,Hot ignition: Yes; end: SE,29,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 A3,30% butane,37.85,7.35,0.50665 bar,Hot ignition: Yes; end: SE,54,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 A4,30% butane,37.21,7.35,0.50665 bar,Hot ignition: Yes; end: SE,210,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 B1,30% butane,35.54,7.35,0.50665 bar,Hot ignition: Yes; end: SE,109,yes,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C1,30% butane,39.85,29.39,2.0266 bar,Hot ignition: Yes; end: SE,30,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C2,30% butane,39.65,29.39,2.0266 bar,Hot ignition: Yes; end: SE,29,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C3,30% butane,39.54,29.39,2.0266 bar,Hot ignition: Yes; end: SE,35,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C4,30% butane,39.43,29.39,2.0266 bar,Hot ignition: Yes; end: SE,90,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 D1,30% butane,39.25,29.39,2.0266 bar,Hot ignition: Yes; end: SE,83,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 F1,30% butane,39.08,29.39,2.0266 bar,Hot ignition: Yes; end: SE,40,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C5,30% butane,38.96,29.39,2.0266 bar,Hot ignition: Yes; end: FT,34,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 C6,30% butane,38.93,29.39,2.0266 bar,Hot ignition: Yes; end: SE,251,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 F2,30% butane,38.55,29.39,2.0266 bar,Hot ignition: Yes; end: FT,24,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 F3,30% butane,38.48,29.39,2.0266 bar,Hot ignition: Yes; end: FT,23,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21174 F4,30% butane,38.41,29.39,2.0266 bar,Hot ignition: Yes; end: FT,35,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 A1,30% butane,39.93,29.39,2.0266 bar,Hot ignition: Yes; end: FT,167,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 C1,30% butane,39.42,29.39,2.0266 bar,Hot ignition: Yes; end: FT,246,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 C2,30% butane,38.93,29.39,2.0266 bar,Hot ignition: Yes; end: SE,27,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 B1,30% butane,38.83,29.39,2.0266 bar,Hot ignition: Yes; end: SE,32,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 H1,30% butane,38.72,29.39,2.0266 bar,Hot ignition: Yes; end: SE,35,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 H2,30% butane,38.62,29.39,2.0266 bar,Hot ignition: Yes; end: FT,158,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 D1,30% butane,39.78,14.70,1.0133 bar,Hot ignition: Yes; end: SE,47,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 G1,30% butane,39.49,14.70,1.0133 bar,Hot ignition: Yes; end: SE,161,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 G2,30% butane,38.85,14.70,1.0133 bar,Hot ignition: Yes; end: SE,60,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 J1,30% butane,38.54,14.70,1.0133 bar,Hot ignition: Yes; end: FT,80,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 J2,30% butane,38.27,14.70,1.0133 bar,Hot ignition: Yes; end: SE,27,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_cfig,PSI-159,21291 J3,30% butane,38.08,14.70,1.0133 bar,Hot ignition: Yes; end: SE,83,no,PSI-159_Experimental table_CFI-G_Normal Flames.csv
+acme_flamedesign,PSI-10,19115A1,C2H4,20.71,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115D2,C2H4,20.62,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115B1,C2H4,20.57,14.90,1.0138854 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115B2,C2H4,20.49,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115F1,C2H4,20.43,14.90,1.0138854 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115G1,C2H4,20.39,14.90,1.0138854 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115K1,C2H4,20.35,14.91,1.01456586 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115L1,C2H4,20.28,14.93,1.01592678 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115N1,C2H4,20.19,14.92,1.01524632 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115M4,C2H4,20.14,14.93,1.01592678 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19115Q1,C2H4,20.09,14.94,1.01660724 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123A1,C2H4,20.98,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123A2,C2H4,20.92,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123A3,C2H4,20.86,14.82,1.00844172 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123A4,C2H4,20.80,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123C1,C2H4,20.74,14.83,1.00912218 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123F1,C2H4,20.67,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123F2,C2H4,20.61,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123F3,C2H4,20.55,14.90,1.0138854 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123K1,C2H4,20.49,14.91,1.01456586 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123B1,C2H4,20.44,14.93,1.01592678 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123D1,C2H4,20.38,14.94,1.01660724 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123J1,C2H4,20.32,14.95,1.0172877 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L1,C2H4,20.26,14.97,1.01864862 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L2,C2H4,20.18,14.98,1.01932908 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L3,C2H4,20.11,14.98,1.01932908 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L4,C2H4,20.05,14.99,1.02000954 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L5,C2H4,20.01,14.99,1.02000954 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L6,C2H4,19.98,14.99,1.02000954 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19123L7,C2H4,19.94,14.98,1.01932908 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137A1,C2H4,21.02,14.75,1.0036785 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137B1,C2H4,20.95,14.75,1.0036785 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137C1,C2H4,20.87,14.77,1.00503942 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137D1,C2H4,20.80,14.78,1.00571988 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137F1,C2H4,20.73,14.80,1.0070808 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137F2,C2H4,20.66,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137F3,C2H4,20.59,14.83,1.00912218 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137G1,C2H4,20.54,14.84,1.00980264 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137H1,C2H4,20.49,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137J1,C2H4,20.44,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137K1,C2H4,20.40,14.85,1.0104831 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137K2,C2H4,20.36,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L1,C2H4,20.32,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L2,C2H4,20.28,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L3,C2H4,20.24,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L4,C2H4,20.20,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L5,C2H4,20.16,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L6,C2H4,20.13,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L7,C2H4,20.09,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19137L8,C2H4,20.05,14.90,1.0138854 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142G1,C2H4,39.69,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142G2,C2H4,39.00,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142G3,C2H4,38.38,14.94,1.01660724 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142F1,C2H4,37.88,14.99,1.02000954 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142J2,C2H4,37.32,15.07,1.02545322 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142G4,C2H4,37.87,14.53,0.98870838 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142G5,C2H4,37.56,14.57,0.99143022 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19142J3,C2H4,37.34,14.57,0.99143022 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150A1,C2H4,39.82,14.76,1.00435896 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150A3,C2H4,39.71,14.80,1.0070808 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150A4,C2H4,39.55,14.85,1.0104831 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150A5,C2H4,39.26,14.92,1.01524632 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150B2,C2H4,38.89,15.01,1.02137046 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150C1,C2H4,38.63,15.06,1.02477276 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150B3,C2H4,38.28,15.13,1.02953598 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150D2,C2H4,38.01,15.18,1.03293828 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150F1,C2H4,37.11,15.32,1.04246472 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150G2,C2H4,37.04,15.32,1.04246472 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150H1,C2H4,36.56,15.32,1.04246472 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150J1,C2H4,36.17,15.39,1.04722794 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150G3,C2H4,35.83,15.39,1.04722794 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150N1,C2H4,30.03,14.73,1.00231758 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19150S1,C2H4,29.40,14.83,1.00912218 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156B2,C2H4,38.90,14.89,1.01320494 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156B4,C2H4,38.79,14.92,1.01524632 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156K1,C2H4,37.97,15.12,1.02885552 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156C1,C2H4,37.69,15.16,1.03157736 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156C2,C2H4,37.50,15.15,1.0308969 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156C3,C2H4,37.07,15.15,1.0308969 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J1,C2H4,37.34,15.08,1.02613368 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J2,C2H4,37.04,15.08,1.02613368 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J3,C2H4,36.85,15.08,1.02613368 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J4,C2H4,36.59,15.08,1.02613368 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J5,C2H4,36.45,15.07,1.02545322 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J6,C2H4,36.27,15.06,1.02477276 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19156J7,C2H4,36.09,15.06,1.02477276 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171D1,C2H4,39.43,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171D2,C2H4,38.66,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171D3,C2H4,38.13,14.75,1.0036785 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171D4,C2H4,37.86,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171D5,C2H4,37.39,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171S1,C2H4,36.95,14.75,1.0036785 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171B1,C2H4,37.89,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171B3,C2H4,37.21,14.96,1.01796816 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171J1,C2H4,36.54,15.12,1.02885552 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171J2,C2H4,36.26,15.15,1.0308969 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171J3,C2H4,36.14,15.15,1.0308969 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19171J4,C2H4,35.96,15.16,1.03157736 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175A2,C2H4,39.84,18.49,1.25817054 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175A3,C2H4,39.72,18.52,1.26021192 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175A4,C2H4,39.10,18.52,1.26021192 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B1,C2H4,38.87,18.53,1.26089238 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B4,C2H4,38.76,18.55,1.2622533 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B5,C2H4,38.49,18.58,1.26429468 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B6,C2H4,38.94,18.36,1.24932456 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B7,C2H4,38.78,18.48,1.25749008 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B8,C2H4,38.60,18.42,1.25340732 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175B9,C2H4,38.40,18.46,1.25612916 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175N1,C2H4,38.25,18.48,1.25749008 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175N2,C2H4,37.94,18.52,1.26021192 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19175N3,C2H4,37.74,18.52,1.26021192 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G1,C2H4,39.85,18.48,1.25749008 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G2,C2H4,39.68,18.52,1.26021192 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G3,C2H4,39.52,18.56,1.26293376 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G6,C2H4,39.36,18.61,1.26633606 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G7,C2H4,39.23,18.65,1.2690579 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G8,C2H4,39.02,18.69,1.27177974 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182G9,C2H4,38.82,18.73,1.27450158 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182N1,C2H4,38.63,18.76,1.27654296 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182N2,C2H4,38.90,18.71,1.27314066 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182N3,C2H4,38.76,18.74,1.27518204 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182A1,C2H4,38.57,18.76,1.27654296 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182C1,C2H4,38.48,18.80,1.2792648 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182C2,C2H4,38.26,18.87,1.28402802 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182N4,C2H4,38.03,18.94,1.28879124 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19182F1,C2H4,37.84,18.96,1.29015216 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189A1,C2H4,39.86,18.45,1.2554487 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189A2,C2H4,39.58,18.69,1.27177974 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189A3,C2H4,39.49,18.64,1.26837744 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189D1,C2H4,39.40,18.70,1.2724602 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189A4,C2H4,39.15,18.81,1.27994526 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189D2,C2H4,39.09,18.84,1.28198664 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189D3,C2H4,39.01,18.87,1.28402802 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189H1,C2H4,38.77,18.96,1.29015216 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189J1,C2H4,38.72,18.97,1.29083262 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189J2,C2H4,38.32,19.00,1.292874 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189J3,C2H4,37.97,19.02,1.29423492 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189K1,C2H4,37.60,19.03,1.29491538 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189K2,C2H4,37.25,19.04,1.29559584 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189K3,C2H4,36.93,19.05,1.2962763 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19189P1,C2H4,36.55,19.06,1.29695676 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196A1,C2H4,39.56,18.44,1.25476824 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196A2,C2H4,39.45,18.46,1.25612916 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196A3,C2H4,39.22,18.50,1.258851 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196B1,C2H4,39.08,18.53,1.26089238 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196B2,C2H4,38.98,18.54,1.26157284 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196B3,C2H4,38.83,18.55,1.2622533 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196B4,C2H4,38.66,18.56,1.26293376 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196C1,C2H4,38.46,18.58,1.26429468 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196C2,C2H4,38.31,18.59,1.26497514 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196D1,C2H4,38.61,18.56,1.26293376 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196D2,C2H4,38.43,18.56,1.26293376 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196F1,C2H4,38.22,18.55,1.2622533 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19196N1,C2H4,38.16,18.57,1.26361422 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A1,C2H4,39.47,14.73,1.00231758 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A2,C2H4,39.25,14.76,1.00435896 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A3,C2H4,39.20,14.76,1.00435896 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A4,C2H4,39.06,14.78,1.00571988 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A5,C2H4,38.90,14.79,1.00640034 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A6,C2H4,38.70,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A7,C2H4,38.45,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200A8,C2H4,38.26,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200K1,C2H4,29.94,14.72,1.00163712 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200H1,C2H4,29.74,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200H2,C2H4,29.40,14.77,1.00503942 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19200H3,C2H4,28.94,14.88,1.01252448 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206A1,C2H4,20.99,14.74,1.00299804 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206A5,C2H4,20.90,14.79,1.00640034 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G1,C2H4,20.82,14.81,1.00776126 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G2,C2H4,20.74,14.82,1.00844172 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G3,C2H4,20.68,14.82,1.00844172 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G4,C2H4,20.62,14.82,1.00844172 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G5,C2H4,20.55,14.82,1.00844172 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206L2,C2H4,20.45,14.83,1.00912218 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206L3,C2H4,20.39,14.84,1.00980264 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206L4,C2H4,20.34,14.85,1.0104831 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206L6,C2H4,20.29,14.85,1.0104831 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G7,C2H4,20.22,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206K1,C2H4,20.15,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206K2,C2H4,20.10,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G8,C2H4,20.06,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206G9,C2H4,20.05,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206N1,C2H4,19.99,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206H1,C2H4,19.97,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206H2,C2H4,19.92,14.86,1.01116356 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206H3,C2H4,19.86,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,19206H4,C2H4,19.80,14.87,1.01184402 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A1,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A2,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A3,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A4,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A5,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A6,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301C1,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301C2,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301D1,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301D2,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A7,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A8,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301A9,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301H1,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301H2,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301H3,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301J1,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301J2,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301J3,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+acme_flamedesign,PSI-10,21301J4,C3H8,40.00,13.70,0.931972789 atm,,,no,PSI-10_Experimental table_Flame Design_Normal Flame.csv
+flex,PSI-69,1,Methanol,21.00,14.65,757.7 mmHg,Disruption,4.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,2,Methanol,21.00,14.73,762 mmHg,Extinction,5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,3,Methanol,21.00,14.78,764.2 mmHg,Extinction,3.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,4,Methanol,21.00,14.70,760 mmHg,Extinction,7.64,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,5,Methanol,21.00,14.70,760 mmHg,Extinction,6.34,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,6,Methanol,21.00,14.70,760 mmHg,Extinction,9.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,7,Heptane,21.00,14.72,761.3 mmHg,Disruption,5.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,8,Heptane,21.00,14.74,762.4 mmHg,Disruption,14.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,9,Heptane,21.00,14.70,760 mmHg,Disruption,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,10,Methanol,21.00,44.86,2319.7 mmHg,Extinction,13.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,11,Methanol,21.00,44.84,2318.8 mmHg,Extinction,16.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,12,Heptane,21.00,44.86,2319.9 mmHg,Disruption,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,13,Methanol,21.00,40.11,2074.2 mmHg,Extinction,10.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,14,Methanol,21.00,39.75,2055.6 mmHg,Extinction,11.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,15,Methanol,21.00,39.96,2066.6 mmHg,Extinction,23.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,16,Methanol,21.00,40.07,2072.1 mmHg,Extinction,3.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,17,Methanol,21.00,29.89,1545.7 mmHg,Disruption,2.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,18,Heptane,21.00,30.05,1553.8 mmHg,Extinction,8.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,19,Heptane,34.00,10.42,539.1 mmHg,Disruption,4.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,20,Methanol,34.00,10.43,539.5 mmHg,Completion,17.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,21,Methanol,34.00,10.45,540.6 mmHg,Disruption,17.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,22,Methanol,34.00,10.45,540.5 mmHg,Disruption,18.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,23,Heptane,34.00,10.48,541.8 mmHg,Disruption,13.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,24,Heptane,34.00,10.50,542.8 mmHg,Disruption,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,25,Methanol,30.00,10.39,537.3 mmHg,Completion,10.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,26,Methanol,30.00,10.41,538.4 mmHg,Disruption,22.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,27,Heptane,30.00,10.46,540.7 mmHg,Disruption,23.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,28,Heptane,30.00,10.44,539.7 mmHg,Disruption,17.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,29,Methanol,30.00,14.83,766.9 mmHg,Completion,10.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,30,Methanol,30.00,14.87,769.2 mmHg,Extinction,15.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,31,Heptane,30.00,14.90,770.5 mmHg,Disruption,18.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,32,Heptane,30.00,14.91,771 mmHg,Completion,14,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,33,Methanol,21.00,14.78,764.5 mmHg,Extinction,11.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,34,Methanol,21.00,14.84,767.7 mmHg,Extinction,27.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,35,Heptane,21.00,14.85,768.1 mmHg,Extinction,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,36,Methanol,20.00,10.42,539 mmHg,Extinction,7.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,37,Methanol,34.00,10.33,534.3 mmHg,Disruption,10.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,38,Methanol,34.00,10.33,534.4 mmHg,Disruption,15.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,39,Heptane,34.00,10.34,534.9 mmHg,Disruption,9.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,40,Methanol,30.00,10.35,535.1 mmHg,Disruption,19.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,41,Methanol,30.00,10.33,534.3 mmHg,Disruption,14.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,42,Heptane,30.00,10.35,535 mmHg,Disruption,11.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,43,Heptane,30.00,10.34,534.9 mmHg,Disruption,11.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,44,Methanol,30.00,14.83,766.8 mmHg,Disruption,16.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,45,Methanol,30.00,14.86,768.3 mmHg,Extinction,6.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,46,Methanol,21.00,14.88,769.5 mmHg,Disruption,13.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,47,Heptane,21.00,14.89,770.1 mmHg,Completion,17.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,48,Methanol,21.00,14.86,768.7 mmHg,Disruption,23.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,49,Heptane,21.00,14.79,764.9 mmHg,Extinction,8.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,50,Heptane,21.00,14.89,770.1 mmHg,Extinction,8.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,51,Heptane,21.00,14.92,771.4 mmHg,Completion,8.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,52,Heptane,30.00,14.91,771.1 mmHg,Disruption,18.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,53,Heptane,21.00,14.89,770.2 mmHg,Disruption,18.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,54,Methanol,20.00,10.47,541.4 mmHg,Extinction,29,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,55,Methanol,20.00,10.49,542.6 mmHg,Disruption,20.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,56,Heptane,20.00,10.52,544.1 mmHg,Completion,7.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,57,Heptane,20.00,10.53,544.4 mmHg,Extinction,6.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,58,Methanol,18.00,14.95,773.3 mmHg,Extinction,29.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,59,Methanol,18.00,14.87,769.2 mmHg,Extinction,17.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,60,Methanol,18.00,14.96,773.7 mmHg,Extinction,23.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,61,Methanol,18.00,14.97,774.1 mmHg,Extinction,25.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,62,Heptane,18.00,14.73,761.8 mmHg,Extinction,4.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,63,Heptane,18.00,14.84,767.6 mmHg,Completion,9.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,64,Heptane,18.00,14.78,764.6 mmHg,Extinction,5.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,65,Methanol,15.00,14.81,765.9 mmHg,Extinction,24.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,66,Methanol,15.00,14.83,766.8 mmHg,Extinction,12.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,67,Methanol,15.00,14.84,767.7 mmHg,Extinction,14.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,68,Methanol,15.00,14.87,768.8 mmHg,Extinction,10.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,69,Heptane,14.00,14.83,767.1 mmHg,Completion,1.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,70,Heptane,15.00,14.72,761 mmHg,Extinction,1.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,71,Methanol,15.00,14.86,768.3 mmHg,Extinction,8.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,72,Heptane,15.00,14.80,765.2 mmHg,Completion,2.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,73,Heptane,15.00,14.72,761 mmHg,Extinction,1.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,74,Heptane,15.00,14.81,765.9 mmHg,Completion,2.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,75,Methanol,13.00,14.90,770.8 mmHg,Extinction,9.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,76,Methanol,13.00,14.88,769.5 mmHg,Extinction,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,77,Methanol,14.00,14.86,768.4 mmHg,Extinction,8.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,78,Methanol,14.00,14.81,766 mmHg,Extinction,12.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,79,Heptane,13.00,14.85,768.1 mmHg,Extinction,1.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,80,Heptane,13.00,14.89,770 mmHg,Extinction,1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,81,Heptane,13.00,14.89,770.2 mmHg,Extinction,1.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,82,Methanol,13.00,14.78,764.6 mmHg,Extinction,7.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,83,Methanol,12.00,14.93,772 mmHg,Extinction,5.45,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,84,Methanol,12.00,14.84,767.2 mmHg,Extinction,10.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,85,Methanol,12.00,14.91,771.2 mmHg,Extinction,9.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,86,Methanol,12.00,14.89,770 mmHg,Extinction,9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,87,Methanol,12.00,14.91,771.2 mmHg,Extinction,9.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,88,Methanol,25.00,10.39,537.5 mmHg,Disruption,14.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,89,Methanol,25.00,10.39,537.4 mmHg,Disruption,24,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,90,Methanol,25.00,10.43,539.2 mmHg,Disruption,20.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,91,Methanol,25.00,10.41,538.3 mmHg,Disruption,18,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,92,Heptane,25.00,10.37,536.3 mmHg,Disruption,21.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,93,Heptane,25.00,10.39,537.3 mmHg,Disruption,8.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,94,Heptane,24.00,10.32,533.6 mmHg,Extinction,10.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,95,Heptane,24.00,10.33,534.4 mmHg,Extinction,8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,96,Heptane,24.00,10.33,534.4 mmHg,Disruption,5.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,97,Methanol,23.00,10.33,534.2 mmHg,Completion,26.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,98,Methanol,23.00,10.39,537.1 mmHg,Extinction,22.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,99,Methanol,23.00,10.35,535 mmHg,Extinction,33,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,100,Heptane,23.00,10.38,536.7 mmHg,Extinction,6.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,101,Heptane,23.00,10.42,538.7 mmHg,Extinction,6.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,102,Heptane,21.00,10.33,534.2 mmHg,Extinction,4.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,103,Heptane,21.00,10.33,534.3 mmHg,Extinction,3.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,104,Methanol,23.00,10.33,534.1 mmHg,Extinction,23.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,105,Methanol,23.00,10.34,534.6 mmHg,Disruption,30.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,106,Methanol,23.00,10.41,538.3 mmHg,Disruption,14.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,107,Methanol,23.00,10.35,535 mmHg,Disruption,15.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,108,Methanol,23.00,10.41,538.3 mmHg,Completion,24.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,109,Methanol,21.00,10.37,536.5 mmHg,Extinction,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,110,Methanol,21.00,10.38,537 mmHg,Extinction,13,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,111,Methanol,21.00,10.38,536.9 mmHg,Completion,16.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,112,Methanol,21.00,10.26,530.7 mmHg,Completion,25.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,113,Methanol,20.00,10.34,534.6 mmHg,Extinction,18.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,115,Methanol,20.00,10.36,535.8 mmHg,Extinction,22.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,116,Methanol,20.00,10.37,536.3 mmHg,Extinction,16.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,117,Heptane,20.00,10.27,531.1 mmHg,Extinction,2.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,118,Heptane,20.00,10.30,532.8 mmHg,Extinction,2.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,119,Heptane,18.00,10.30,532.6 mmHg,Extinction,1.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,120,Heptane,18.00,10.30,532.5 mmHg,Extinction,1.43,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,121,Methanol,18.00,10.18,526.3 mmHg,Extinction,8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,122,Methanol,18.00,10.27,531.2 mmHg,Extinction,13.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,123,Methanol,18.00,10.29,532 mmHg,Extinction,8.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,124,Methanol,18.00,10.29,532.4 mmHg,Extinction,2.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,125,Methanol,17.00,10.39,537.2 mmHg,Extinction,5.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,126,Methanol,17.00,10.37,536.1 mmHg,Extinction,11.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,127,Methanol,17.00,10.38,536.7 mmHg,Extinction,11,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,128,Methanol,17.00,10.39,537.3 mmHg,Extinction,11.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,129,Heptane,17.00,10.37,536.2 mmHg,Extinction,0.55,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,130,Heptane,17.00,10.39,537.2 mmHg,Extinction,0.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,131,Heptane,24.00,14.77,763.9 mmHg,Disruption,4.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,132,Heptane,24.00,14.80,765.2 mmHg,Disruption,12.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,133,Heptane,24.00,14.83,766.7 mmHg,Disruption,19,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,134,Heptane,24.00,14.84,767.2 mmHg,Extinction,9.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,135,Heptane,24.00,14.85,768.2 mmHg,Completion,10.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,136,Heptane,24.00,14.85,768.1 mmHg,Completion,17,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,137,Heptane,24.00,14.85,768.2 mmHg,Disruption,17.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,138,Heptane,24.00,14.86,768.6 mmHg,Disruption,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,139,Heptane,24.00,14.85,768 mmHg,Disruption,5.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,140,Methanol,15.00,10.32,533.5 mmHg,Extinction,1.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,141,Methanol,15.00,10.33,534.1 mmHg,Extinction,2.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,142,Methanol,15.00,10.34,534.5 mmHg,Extinction,3.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,143,Methanol,15.00,10.34,534.7 mmHg,Extinction,2.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,144,Methanol,20.00,14.73,761.9 mmHg,Extinction,23.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,145,Methanol,20.00,14.76,763.5 mmHg,Extinction,20,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,146,Methanol,20.00,14.80,765.5 mmHg,Extinction,39.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,147,Methanol,17.00,10.36,535.7 mmHg,Extinction,7.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,148,Heptane,20.00,14.78,764.4 mmHg,Disruption,11.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,149,Heptane,20.00,14.82,766.2 mmHg,Disruption,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,150,Heptane,20.00,14.84,767.6 mmHg,Extinction,8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,151,Methanol,18.00,14.74,762.5 mmHg,Completion,31.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,152,Methanol,18.00,14.79,765 mmHg,Extinction,23.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,153,Methanol,18.00,14.80,765.6 mmHg,Extinction,15.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,154,Heptane,18.00,14.74,762.3 mmHg,Extinction,2.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,155,Heptane,18.00,14.79,764.9 mmHg,Extinction,2.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,156,Heptane,18.00,14.81,765.7 mmHg,Completion,3.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,157,Methanol,16.00,14.74,762.1 mmHg,Extinction,7.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,158,Methanol,16.00,14.78,764.4 mmHg,Extinction,10.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,159,Methanol,16.00,14.80,765.5 mmHg,Extinction,14.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,160,Methanol,16.00,14.84,767.6 mmHg,Extinction,14.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,161,Methanol,15.00,14.76,763.3 mmHg,Extinction,6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,162,Methanol,15.00,14.78,764.4 mmHg,Extinction,8.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,163,Methanol,15.00,14.81,765.9 mmHg,Extinction,11.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,164,Methanol,15.00,14.81,766.1 mmHg,Extinction,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,165,Heptane,18.00,14.80,765.4 mmHg,Extinction,3.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,166,Methanol,14.00,14.71,760.8 mmHg,Extinction,3.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,167,Methanol,14.00,14.73,761.6 mmHg,Extinction,5.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,168,Methanol,21.00,14.76,763.4 mmHg,Disruption,15.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,169,Methanol,21.00,14.81,766.1 mmHg,Extinction,16.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,170,Methanol,21.00,14.83,766.7 mmHg,Extinction,23.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,171,Heptane,18.00,14.69,759.9 mmHg,Extinction,2.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,172,Heptane,18.00,14.73,762 mmHg,Extinction,4.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,173,Heptane,18.00,14.74,762.1 mmHg,Disruption,3.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,174,Heptane,24.00,10.28,531.7 mmHg,Disruption,11.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,175,Heptane,24.00,10.29,532.1 mmHg,Disruption,15.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,176,Methanol,24.00,10.38,536.9 mmHg,Extinction,38.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,177,Methanol,24.00,10.38,537 mmHg,Extinction,14.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,178,Heptane,23.00,10.32,533.6 mmHg,Extinction,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,179,Heptane,23.00,10.33,534.4 mmHg,Disruption,7.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,180,Heptane,19.00,14.67,758.4 mmHg,Extinction,4.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,181,Heptane,19.00,14.68,759.1 mmHg,Extinction,7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,182,Heptane,19.00,14.68,759 mmHg,Disruption,5.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,183,Methanol,23.00,10.33,534.4 mmHg,Extinction,26.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,184,Methanol,23.00,10.35,535.1 mmHg,Extinction,15.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,185,Methanol,23.00,10.35,535.2 mmHg,Extinction,12.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,186,Methanol,23.00,10.37,536.2 mmHg,Extinction,9.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,187,Methanol,19.00,14.66,758 mmHg,Extinction,21.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,188,Methanol,19.00,14.66,758.1 mmHg,Extinction,11,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,189,Methanol,18.00,14.72,761.2 mmHg,Extinction,30.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,190,Methanol,18.00,14.78,764.6 mmHg,Extinction,14,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,191,Methanol,18.00,14.80,765.3 mmHg,Extinction,5.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,192,Methanol,17.00,14.69,759.5 mmHg,Extinction,21.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,193,Methanol,17.00,14.68,759.1 mmHg,Extinction,15.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,194,Heptane,17.00,14.54,752 mmHg,Extinction,1.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,195,Heptane,17.00,14.55,752.5 mmHg,Extinction,1.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,196,Heptane,20.00,14.67,758.4 mmHg,Extinction,8.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,197,Heptane,20.00,14.69,759.8 mmHg,Extinction,8.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,198,Heptane,20.00,14.70,760.1 mmHg,Disruption,8.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,199,Methanol,20.00,14.58,754 mmHg,Extinction,21,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,200,Methanol,20.00,14.62,756.1 mmHg,Extinction,11.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,201,Methanol,20.00,14.64,756.9 mmHg,Extinction,10.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,202,Methanol,21.00,14.70,760.2 mmHg,Extinction,19.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,203,Methanol,21.00,14.73,761.6 mmHg,Extinction,12.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,204,Heptane,21.00,14.63,756.5 mmHg,Disruption,23.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,205,Heptane,21.00,14.64,757.3 mmHg,Disruption,24,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,206,Heptane,21.00,14.70,760.2 mmHg,Disruption,17.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,207,Heptane,21.00,14.75,762.7 mmHg,Completion,11.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,208,Heptane,21.00,14.75,762.9 mmHg,Completion,12.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,209,Heptane,16.00,14.69,759.8 mmHg,Extinction,3.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,210,Heptane,16.00,14.69,759.8 mmHg,Extinction,,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,211,Heptane,16.00,14.69,759.9 mmHg,Extinction,4.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,212,Heptane,15.00,14.77,764 mmHg,Extinction,3.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,213,Heptane,14.00,14.69,759.8 mmHg,Extinction,1.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,214,Heptane,14.00,14.69,759.9 mmHg,Extinction,3.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,215,Methanol,14.00,14.65,757.6 mmHg,Extinction,26,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,216,Methanol,14.00,14.66,758.3 mmHg,Extinction,15.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,217,Methanol,13.00,14.68,759.4 mmHg,Extinction,9.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,218,Methanol,13.00,14.71,760.6 mmHg,Extinction,16.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,219,Methanol,12.00,14.73,761.6 mmHg,Extinction,6.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,220,Methanol,12.00,14.73,761.9 mmHg,Extinction,7.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,221,Methanol,12.00,14.77,763.7 mmHg,Extinction,6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,222,Methanol,20.00,14.68,759.2 mmHg,Extinction,14.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,223,Methanol,20.00,14.69,759.6 mmHg,Extinction,~6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,224,Heptane,20.00,14.61,755.3 mmHg,Completion,~9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,225,Methanol,19.00,14.57,753.4 mmHg,Extinction,12.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,226,Methanol,18.00,14.68,759.2 mmHg,Extinction,12.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,227,Methanol,18.00,14.70,760.3 mmHg,Extinction,11.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,228,Heptane,21.00,14.84,767.4 mmHg,Extinction,17.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,229,Heptane,21.00,14.85,768.1 mmHg,Disruption,10.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,230,Heptane,21.00,14.87,769.2 mmHg,Extinction,9.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,231,Heptane,19.00,14.67,758.8 mmHg,Disruption,12,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,232,Heptane,18.00,14.77,763.7 mmHg,Extinction,4.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,233,Heptane,18.00,14.81,765.9 mmHg,Completion,9.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,234,Heptane,18.00,14.82,766.5 mmHg,Completion,8.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,235,Heptane,17.00,14.68,759.3 mmHg,Extinction,3.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,236,Heptane,17.00,14.68,759.3 mmHg,Extinction,4.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,237,Heptane,17.00,14.69,759.6 mmHg,Disruption,1.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,238,Heptane,17.00,14.69,759.8 mmHg,Completion,2.7,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,239,Methanol,17.00,14.58,754.2 mmHg,Extinction,9.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,240,Methanol,17.00,14.64,757 mmHg,Extinction,13.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,241,Methanol,16.00,14.69,759.9 mmHg,Extinction,7.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,242,Methanol,16.00,14.72,761 mmHg,Extinction,5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,243,Heptane,16.00,14.66,757.9 mmHg,Extinction,2.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,244,Methanol,15.00,14.61,755.6 mmHg,Extinction,3.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,245,Methanol,15.00,14.63,756.7 mmHg,Extinction,4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,246,Methanol,14.00,14.68,759.2 mmHg,Extinction,1.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,247,Methanol,14.00,14.69,759.8 mmHg,Extinction,1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,248,Methanol,13.00,14.76,763.5 mmHg,Extinction,0.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,249,Heptane,24.00,10.33,534 mmHg,Extinction,12.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,250,Heptane,23.00,10.29,532.2 mmHg,Completion,11.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,251,Methanol,24.00,10.33,534.3 mmHg,Extinction,11.2,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,252,Methanol,24.00,10.34,534.6 mmHg,Disruption,8.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,253,Methanol,23.00,10.28,531.7 mmHg,Extinction,8.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,254,Methanol,23.00,10.28,531.8 mmHg,Disruption,6.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,255,Methanol,21.00,10.29,531.9 mmHg,Extinction,10.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,256,Methanol,21.00,10.27,531.2 mmHg,Extinction,12.1,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,257,Methanol,21.00,10.27,531.2 mmHg,Extinction,7.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,258,Heptane,21.00,10.24,529.6 mmHg,Extinction,7.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,259,Heptane,21.00,10.23,529 mmHg,Extinction,11,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,260,Heptane,20.00,10.30,532.5 mmHg,Extinction,4.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,261,Heptane,20.00,10.29,532 mmHg,Extinction,5.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,262,Methanol,20.00,10.20,527.6 mmHg,Extinction,17.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,263,Methanol,20.00,10.21,527.9 mmHg,Extinction,10.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,264,Methanol,18.00,10.29,532.4 mmHg,Extinction,7.8,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,265,Methanol,18.00,10.30,532.9 mmHg,Extinction,5.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,266,Methanol,18.00,10.31,533.2 mmHg,Extinction,2.3,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,267,Heptane,18.00,10.21,528 mmHg,Extinction,3.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,268,Heptane,18.00,10.25,530.3 mmHg,Extinction,3.5,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,269,Heptane,17.00,10.29,532.2 mmHg,Extinction,1.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,270,Heptane,17.00,10.30,532.5 mmHg,Completion,1.4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,271,Methanol,17.00,10.26,530.4 mmHg,Extinction,4,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,272,Methanol,17.00,10.28,531.5 mmHg,Extinction,2.9,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,273,Heptane,21.00,14.79,764.7 mmHg,Extinction,7.6,no,PSI-69_Experimental table_FLEX.csv
+flex,PSI-69,274,Heptane,21.00,14.82,766.2 mmHg,Extinction,11.7,no,PSI-69_Experimental table_FLEX.csv
+cfi,PSI-39,1206,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1207,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1208,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1209,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1210,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1211,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1213,C12H26,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1215,C12H26,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1216,C12H26,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1217,C12H26,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1218,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1219,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1220,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1221,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1222,C12H26,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1223,C12H26,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1224,C12H26,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1225,C12H26,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1226,C12H26,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1227,C12H26,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1228,C12H26,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1229,C12H26,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1285,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1286,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1287,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1288,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1289,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1295,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1296,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1297,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1290,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1291,[.60]/[.40] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1292,[.60]/[.40] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1293,[.60]/[.40] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1294,[.60]/[.40] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1300,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1301,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1310,[.60]/[.40] C12H26/iso-dodecane,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1311,[.60]/[.40] C12H26/iso-dodecane,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1312,[.60]/[.40] C12H26/iso-dodecane,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1313,[.60]/[.40] C12H26/iso-dodecane,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1314,[.60]/[.40] C12H26/iso-dodecane,21.00,18.37,1.25 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1320,[.60]/[.40] C12H26/iso-dodecane,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1321,[.60]/[.40] C12H26/iso-dodecane,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1322,[.60]/[.40] C12H26/iso-dodecane,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1323,[.60]/[.40] C12H26/iso-dodecane,21.00,29.39,2 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1328,[.60]/[.40] C12H26/iso-dodecane,17.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1329,[.60]/[.40] C12H26/iso-dodecane,17.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1330,[.60]/[.40] C12H26/iso-dodecane,17.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1331,[.60]/[.40] C12H26/iso-dodecane,17.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1332,[.60]/[.40] C12H26/iso-dodecane,17.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1335,[.60]/[.40] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1336,[.60]/[.40] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1337,[.60]/[.40] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1338,[.60]/[.40] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1340,[.75]/[.25] C12H26/iso-dodecane,21.00,73.48,5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1341,[.60]/[.40] C12H26/iso-dodecane,21.00,73.48,5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1342,[.60]/[.40] C12H26/iso-dodecane,21.00,73.48,5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1346,[.60]/[.40] C12H26/iso-dodecane,21.00,11.02,0.75 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1347,[.60]/[.40] C12H26/iso-dodecane,21.00,11.02,0.75 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1348,[.60]/[.40] C12H26/iso-dodecane,21.00,11.02,0.75 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1349,[.60]/[.40] C12H26/iso-dodecane,21.00,11.02,0.75 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1356,[.60]/[.40] C12H26/iso-dodecane,21.00,7.35,0.5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1357,[.60]/[.40] C12H26/iso-dodecane,21.00,7.35,0.5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1358,[.60]/[.40] C12H26/iso-dodecane,21.00,7.35,0.5 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1362,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1363,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1364,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1365,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1366,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1367,[.75]/[.25] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1368,[.75]/[.25] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1369,[.75]/[.25] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1373,[.75]/[.25] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1374,[.75]/[.25] C12H26/iso-dodecane,21.00,44.09,3 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1383,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1384,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1386,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1387,[.60]/[.40] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1285,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1286,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1287,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1288,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1289,[.75]/[.25] C12H26/iso-dodecane,17.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1295,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1296,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv
+cfi,PSI-39,1297,[.75]/[.25] C12H26/iso-dodecane,21.00,14.70,1 atm,,,no,PSI-39_Experimental table_CFI.csv

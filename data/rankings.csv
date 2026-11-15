@@ -6,12 +6,12 @@ saffire2,10,10,8,8,Investigates how spacecraft materials burn and spread under d
 saffire3,10,10,8,8,Supplies large-scale microgravity fire-spread data directly relevant to spacecraft and habitat safety.
 same,9,10,8,8,"Studies smoke generation, transport, and detection in microgravity to improve spacecraft fire detection systems."
 samer,9,10,8,8,Measures smoke particle behavior and detector performance in microgravity to improve fire detection reliability.
-flex,9,10,9,8,Maps flammability limits and fire-suppression effectiveness across 12-34% oxygen in microgravity; 17 tests at 30-34% oxygen came within 0.3 psi of Moon-base pressure.
+flex,9,10,9,8,"Maps flammability limits and fire-suppression effectiveness across 12-34% oxygen in microgravity; 17 tests at 30-34% oxygen ran at 10.3-10.5 psi, just above the 10.2 psi Moon-base limit."
 flex2,9,10,8,8,"Investigates flame extinction and combustion behavior across oxygen concentrations in microgravity, supporting suppression research."
 cfi,8,9,7,7,Studies droplet combustion and flame-extinction mechanisms in microgravity to improve understanding of fire suppression.
 spice,8,9,6,6,"Examines soot formation and airflow effects in microgravity, supporting smoke monitoring and fire detection research."
 slice,8,9,6,6,Studies flame stability and airflow effects in microgravity to improve understanding of combustion behavior in spacecraft.
-daft,8,8,5,8,"Validates aerosol measurement technology in microgravity, helping improve smoke-detection capabilities."
+daft,8,8,7,8,"Validates aerosol measurement technology in microgravity, helping improve smoke-detection capabilities."
 psi60,6,7,5,5,Analyzes soot formation and smoke-related combustion data from microgravity experiments to support fire detection research.
 psi62,7,8,7,6,Uses BASS data to model flame spread in solid materials and improve predictions of spacecraft material flammability.
 psi115,6,7,5,5,Models smoke growth and transport in microgravity to better understand spacecraft fire-detection challenges.

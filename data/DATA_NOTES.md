@@ -128,6 +128,8 @@ So 17 is the conservative count of hot flames at Moon-base conditions.
 - O2 values are the chamber reading before each test; O2 drops during a test as the chamber fills with combustion products.
 - CFI-G was designed to study cool flames, not cabin fire safety. These are diluted gaseous fuels on a spherical porous burner, not cabin materials.
 
+**The per-test data behind this table is saved in `data/moon_tests.csv`.** It has one row per flight test: 746 tests from 4 investigations (`acme_cfig`, `acme_flamedesign`, `flex`, `cfi`), each with chamber O2, pressure in psi, the pressure as published, the outcome, the burn time, and whether the test falls in the Moon-base zone. Only chamber-air tests are included; inverse-flame tests are left out because their O2 value is burner flow. `acme_bre`, `flex2` and `acme_sflame` can't be included because PSI doesn't publish oxygen and pressure together for each of their tests. Rebuild the file from PSI at any time with `python build_moon_tests.py`. Current result: 20 tests in the zone, all `acme_cfig`, 17 with hot ignition. The closest tests outside it are FLEX's 17 at 10.33–10.50 psi.
+
 ### C. Headline (offered to Person 4 and Person 5)
 > Of the 24 NASA microgravity combustion investigations in PSI, only one, ACME CFI-G, has test-by-test records of flames burning at likely Moon-base conditions (30% or more oxygen, 10.2 psi or less): 17 hot-flame ignitions at 33–39% oxygen and 7.35 psi, all with gaseous fuels. FLEX came within 0.1–0.3 psi: 17 liquid-droplet tests (methanol and heptane) burned at 30–34% oxygen and 10.3–10.5 psi. No solid-material fire test is confirmed at those conditions, and none was run in partial gravity.
 
