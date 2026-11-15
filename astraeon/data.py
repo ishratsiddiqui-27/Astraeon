@@ -169,6 +169,42 @@ def load_glossary() -> dict:
         return json.load(f)
 
 
+def load_atmospheres() -> list[dict]:
+    """data/atmospheres.json: preset atmospheres (id, name, o2_percent, pressure_psi, note, source)."""
+    path = DATA_DIR / "atmospheres.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return [{"id": key, **value} for key, value in json.load(f).items()]
+
+
+def tests_near(o2_percent: float, pressure_psi: float, o2_tol: float = 3.0, psi_tol: float = 1.5,
+               closest: int = 10) -> dict:
+    """Flight tests from data/moon_tests.csv that ran near a given atmosphere.
+
+    "Near" = within +/- o2_tol percentage points of oxygen AND +/- psi_tol psi (a box around the point).
+    Returns a dict:
+      within         tests inside the box, closest first
+      closest        the `closest` nearest tests, even when none are inside the box
+      by_experiment  {experiment short name: number of tests inside the box}
+    Each test gets `experiment` (short name) and `distance` (0 = exact match, 1 = edge of the box).
+    Only 4 experiments record oxygen and pressure per test, so "no tests" means "not tested in PSI's
+    per-test records", not "safe".
+    """
+    names = {r["id"]: short_name(r["name"], r["source_link"]) for r in load_investigations()}
+    scored = []
+    for t in load_moon_tests():
+        distance = max(abs(t["o2_percent"] - o2_percent) / o2_tol, abs(t["pressure_psi"] - pressure_psi) / psi_tol)
+        scored.append({**t, "experiment": names.get(t["id"], t["id"]), "distance": round(distance, 3)})
+    scored.sort(key=lambda t: t["distance"])
+    within = [t for t in scored if t["distance"] <= 1]
+    by_experiment = {}
+    for t in within:
+        by_experiment[t["experiment"]] = by_experiment.get(t["experiment"], 0) + 1
+    return {"within": within, "closest": scored[:closest], "by_experiment": by_experiment,
+            "o2_tol": o2_tol, "psi_tol": psi_tol}
+
+
 def load_incidents() -> list[dict]:
     """data/incident_summaries.json (Person 3) as a list, oldest first. Each incident gets its id and
     related_names (card-sized names of its related experiments). Empty if the file doesn't exist."""

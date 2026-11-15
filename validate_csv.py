@@ -25,6 +25,7 @@ IMAGES = os.path.join("data", "images.csv")
 TIMELINE = os.path.join("data", "timeline.csv")
 GLOSSARY = os.path.join("data", "glossary.json")
 INCIDENTS = os.path.join("data", "incident_summaries.json")
+ATMOSPHERES = os.path.join("data", "atmospheres.json")
 INCIDENT_FIELDS = ["name", "date", "summary", "related_experiments", "data_note", "sources"]
 
 INV_COLUMNS = ["id", "name", "fuel_type", "fuel_detail", "hardware", "o2_percent", "pressure_psi",
@@ -302,6 +303,37 @@ def check_incidents(inv):
     print(f"  {INCIDENTS}: {len(data)} incidents")
 
 
+def check_atmospheres():
+    """data/atmospheres.json: {id: {name, o2_percent, pressure_psi, note, source}} preset atmospheres."""
+    try:
+        with open(ATMOSPHERES, encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        errors.append(f"{ATMOSPHERES}: not valid JSON ({e})")
+        return
+    if not isinstance(data, dict):
+        errors.append(f"{ATMOSPHERES}: should be an object keyed by atmosphere id")
+        return
+    names = []
+    for key, a in data.items():
+        where = f"{ATMOSPHERES} ({key})"
+        if not isinstance(a, dict):
+            errors.append(f"{where}: should be an object")
+            continue
+        for field in ("name", "note", "source"):
+            if not str(a.get(field, "")).strip():
+                errors.append(f"{where}: '{field}' is blank")
+        o2, psi = a.get("o2_percent"), a.get("pressure_psi")
+        if not isinstance(o2, (int, float)) or not 0 < o2 <= 100:
+            errors.append(f"{where}: o2_percent must be a number above 0 and up to 100")
+        if not isinstance(psi, (int, float)) or psi <= 0:
+            errors.append(f"{where}: pressure_psi must be a number above 0")
+        names.append(a.get("name"))
+    if len(names) != len(set(names)):
+        errors.append(f"{ATMOSPHERES}: two atmospheres share a name (names are used as labels)")
+    print(f"  {ATMOSPHERES}: {len(data)} atmospheres")
+
+
 def check_glossary():
     try:
         with open(GLOSSARY, encoding="utf-8") as f:
@@ -377,7 +409,9 @@ def main():
         check_glossary()
     if os.path.exists(INCIDENTS) and inv:
         check_incidents(inv)
-    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY, INCIDENTS):
+    if os.path.exists(ATMOSPHERES):
+        check_atmospheres()
+    for path in (RANK, SUMM, MOON, EVIDENCE, IMAGES, TIMELINE, GLOSSARY, INCIDENTS, ATMOSPHERES):
         if not os.path.exists(path):
             print(f"  {path}: not found, skipped")
 

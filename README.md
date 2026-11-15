@@ -28,6 +28,7 @@
 | `data/moon_evidence.csv` | One Moon-evidence badge per experiment (confirmed, near miss, not confirmed, ...) with a one-line reason | **Person 1** |
 | `data/images.csv`, `assets/images/` | Real experiment photos from PSI, only those with a stated license (CC0-1.0) | **Person 1** |
 | `data/timeline.csv` | Investigation start and end dates and flight platform from PSI | **Person 1** |
+| `data/atmospheres.json` | Preset atmospheres for the explorer: normal air and NASA's 10.2 and 8.2 psia exploration atmospheres (quoted from PSI-20), plus the Moon-base limit (challenge brief) | **Person 1** |
 | `build_psi_extras.py` | Rebuilds `images.csv`, `assets/images/` and `timeline.csv` from NASA PSI (needs internet) | **Person 1** |
 | `data/summaries.json` | Plain-language summary, why it matters, `moon_status` badge and `moon_takeaway` per experiment | **Person 3** |
 | `data/glossary.json` | 24 terms with one-sentence definitions, for hover help | **Person 3** |
@@ -58,6 +59,8 @@ for _, row in df.iterrows():
         st.caption(row["moon_takeaway"])
         st.text(f"Pressure: {show(row['pressure_psi'])}")
 ```
+
+**Atmosphere explorer:** `tests_near(o2_percent, pressure_psi)` returns the real flight tests within ±3 points of oxygen and ±1.5 psi, and `moon_chart(selected=(o2, psi))` draws that box on the chart. `load_atmospheres()` gives the presets. `preview_data.py` has a working explorer (preset buttons, two sliders, chart, table) to copy into a page.
 
 `load_glossary()` returns Person 3's `{term: definition}` for hover help. `load_incidents()` returns the three incidents oldest first, each with `related_names` for linking to experiment cards.
 

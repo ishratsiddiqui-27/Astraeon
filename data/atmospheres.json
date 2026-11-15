@@ -1,0 +1,34 @@
+{
+  "normal_air": {
+    "name": "Normal air: 14.7 psia, 21%",
+    "o2_percent": 21,
+    "pressure_psi": 14.7,
+    "note": "Sea-level pressure with normal oxygen. One of the NASA-considered atmospheres listed in PSI-20.",
+    "source": "PSI-20 (ACME BRE) objectives: \"NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen\"",
+    "source_link": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20"
+  },
+  "exploration_10_2": {
+    "name": "NASA exploration: 10.2 psia, 26.5%",
+    "o2_percent": 26.5,
+    "pressure_psi": 10.2,
+    "note": "Lower pressure with more oxygen. Listed in PSI-20 as an atmosphere considered for human space missions.",
+    "source": "PSI-20 (ACME BRE) objectives: \"10.2 psia, 26.5 %\"",
+    "source_link": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20"
+  },
+  "exploration_8_2": {
+    "name": "NASA exploration: 8.2 psia, 34%",
+    "o2_percent": 34,
+    "pressure_psi": 8.2,
+    "note": "The lowest-pressure, highest-oxygen atmosphere listed in PSI-20. It falls inside the Moon-base zone.",
+    "source": "PSI-20 (ACME BRE) objectives: \"8.2 psia, 34 % oxygen\"",
+    "source_link": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20"
+  },
+  "moon_base_limit": {
+    "name": "Moon-base limit: 10.2 psi, 30%",
+    "o2_percent": 30,
+    "pressure_psi": 10.2,
+    "note": "The corner of the expected Moon-base range: 30% oxygen or more, 10.2 psi or less. Real Moon-base air could be anywhere inside that zone.",
+    "source": "NASA Space Apps challenge brief",
+    "source_link": ""
+  }
+}
