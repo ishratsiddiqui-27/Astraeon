@@ -26,9 +26,11 @@ A blank value means the source does not report it. It never means zero.
 ## How we used AI
 
 - Claude drafted the plain-English summaries, Moon-base takeaways and glossary from the data rows. Every summary was checked by an automated script against its source row (ids, sentence counts and every number) and then read by a team member.
-- Claude Code helped write the checking scripts.
+- Claude Code wrote most of the dashboard code with us: the Streamlit pages, styling, charts, the Ask Astraeon search and the checking scripts. We chose the design and the evidence rules, reviewed the output and tested every page.
 - The Ask Astraeon page searches only our checked data. When an API key is set, Gemini phrases the answer and cites numbered sources.
 
 ## Team
 
-Registered on NASA Space Apps: Maimuna Afrah (team owner), Hafsa Anjum, Madeeha Khan, Ishrat Siddiqui and Arsheen Mehak.
+- **Maimuna Afrah** (team lead): data collection and checking, the dashboard, Ask Astraeon, and the final rankings.
+- **Ishrat Siddiqui**: AI summaries, glossary, incident history, research gaps, deployment and the submission write-up.
+- **Madeeha Khan**: the original relevance rankings.
