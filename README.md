@@ -8,11 +8,20 @@
 
 | Person | Role | Files in this repo | Status |
 |---|---|---|---|
-| **Person 1** | Data collection and curation | `data/investigations.csv`: NASA PSI microgravity combustion experiments (24 experiments across solid, liquid, gas fuels and fire prevention, detection, suppression). **19 columns, frozen.** Docs and scripts listed below. | ✅ Complete & Verified |
+| **Person 1** | Data collection and curation; dashboard frontend | `data/investigations.csv`: NASA PSI microgravity combustion experiments (24 experiments across solid, liquid, gas fuels and fire prevention, detection, suppression). **19 columns, frozen.** The app: `app.py`, `app_pages/`, `.streamlit/config.toml`. Docs and scripts listed below. | Data ✅ · App in progress |
 | **Person 2** | Rankings, built from `data/investigations.csv` | `data/rankings.csv` (scores for spacecraft, station, Moon and rover), `data/RANKINGS_NOTES.md` (scoring rule and change log) | ✅ Complete (finalized by Person 1) |
-| **Person 3** | AI summaries, built from `data/investigations.csv` | None yet | In Progress |
-| **Person 4** | Spacecraft fire safety scenarios, suppression standards, and dashboard configuration parameters | `data/incidents.csv` (not in repo yet) | In Progress |
-| **Person 5** | Research and submission | None yet | In Progress |
+| **Person 3** | AI summaries; deployment; research and submission | `data/summaries.json`, `data/glossary.json`, `data/incident_summaries.json`, `data/research_gaps.json`; `requirements.txt` and `data/about.md` (About page text) | Summaries ✅ · Deployment in progress |
+| **Person 4** | Dashboard | Handed over to Person 1 (`incidents.csv` replaced by Person 3's `incident_summaries.json`) | Handed over |
+| **Person 5** | Research and submission | Handed over to Person 3 | Handed over |
+
+## ▶️ Running the app
+
+```bash
+pip install streamlit
+streamlit run app.py
+```
+
+Seven pages, in the top navigation: **Home** (headline finding and Moon-base chart), **Experiments** (filters, cards, details, CSV download), **Rank by setting**, **Compare**, **Moon-base explorer**, **Fire history & gaps**, **About**. The theme (dark, fonts, colours) is in `.streamlit/config.toml`. Deployed on Streamlit Community Cloud with `app.py` as the main file.
 
 ### Docs & Scripts
 
@@ -24,7 +33,9 @@
 | `data/moon_tests.csv` | One row per flight test with chamber oxygen and pressure (746 tests from PSI). For the oxygen vs. pressure chart with the Moon-base zone | **Person 1** |
 | `build_moon_tests.py` | Rebuilds `data/moon_tests.csv` by downloading the experiment tables from NASA PSI (needs internet) | **Person 1** |
 | `astraeon/data.py` | Data layer for the app: `load_all()` joins every file by id into one table; `show()` turns blanks into "Not reported" | **Person 1 + Person 3** |
-| `astraeon/charts.py` | Ready-made charts: `moon_chart()` (oxygen vs. pressure with the Moon-base zone) | **Person 1** |
+| `astraeon/charts.py` | Ready-made charts: `moon_chart()` (oxygen vs. pressure with the Moon-base zone), `rank_chart()` (scores for one setting) | **Person 1** |
+| `astraeon/ui.py` | Streamlit pieces shared by the pages: cached loaders, badges, experiment cards, the details dialog | **Person 1** |
+| `app.py`, `app_pages/`, `.streamlit/config.toml` | The dashboard: navigation, the seven pages, the theme | **Person 1** |
 | `data/moon_evidence.csv` | One Moon-evidence badge per experiment (confirmed, near miss, not confirmed, ...) with a one-line reason | **Person 1** |
 | `data/images.csv`, `assets/images/` | Real experiment photos from PSI, only those with a stated license (CC0-1.0) | **Person 1** |
 | `data/timeline.csv` | Investigation start and end dates and flight platform from PSI | **Person 1** |
@@ -82,7 +93,7 @@ Run the dataset validator from the project root:
 python validate_csv.py
 ```
 
-Run it before every push. It checks all four data files together:
+Run it before every push. It checks every data file together:
 
 - **Errors (must fix):**
   - `investigations.csv` keeps its 19 frozen columns and allowed values.

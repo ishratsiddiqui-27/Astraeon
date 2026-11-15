@@ -15,10 +15,11 @@ from __future__ import annotations
 
 from .data import MOON_O2_MIN, MOON_PSI_MAX, load_atmospheres, load_investigations, load_moon_tests, short_name
 
-ACCENT = "#2563eb"        # the one highlight colour: tests inside the Moon-base zone
-MUTED = "#a8a29e"         # every other test
-REFERENCE = "#6b7280"     # zone edges and labels
-MARKER = "#ea580c"        # preset atmospheres and the selected atmosphere
+# Colours for the app's dark theme (.streamlit/config.toml).
+ACCENT = "#60A5FA"        # the one highlight colour: tests inside the Moon-base zone
+MUTED = "#7C8699"         # every other test
+REFERENCE = "#9AA3B8"     # zone edges and labels
+MARKER = "#F97316"        # preset atmospheres, the selected atmosphere, ranking bars
 O2_DOMAIN = [10, 46]
 MOON_CHART_ALT = "Flight tests by chamber oxygen and pressure; only ACME CFI-G tests fall inside the Moon-base zone"
 
@@ -156,3 +157,54 @@ def moon_chart(max_psi: float = 50, height: int = 420, selected: tuple[float, fl
         "autosize": {"type": "fit-x", "contains": "padding"},
         "layer": layers,
     }
+
+
+def rank_chart(records: list[dict], score_column: str, setting: str, bar_height: int = 22) -> dict:
+    """Horizontal bars: every experiment's 0-10 score for one setting, highest first.
+
+    records = astraeon.data.load_all_records() (or a filtered list); score_column = a value of
+    SCORE_COLUMNS, e.g. "score_moon"; setting = its label, e.g. "Moon base".
+    """
+    values = [{"experiment": r["short_name"], "score": r[score_column], "reason": r.get("reason", ""),
+               "moon_status": r.get("moon_status_label", "")}
+              for r in records if r.get(score_column) is not None]
+    values.sort(key=lambda v: (-v["score"], v["experiment"].lower()))
+    order = [v["experiment"] for v in values]
+    y = {"field": "experiment", "type": "nominal", "sort": order, "title": None, "axis": {"labelLimit": 180}}
+    x = {"field": "score", "type": "quantitative", "scale": {"domain": [0, 10]}}
+    return {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "title": {"text": f"{setting}: fire-safety relevance, 0 to 10", "anchor": "start",
+                  "subtitle": "10 means the experiment's findings apply directly to this setting."},
+        "width": "container",
+        "height": max(1, len(values)) * bar_height,
+        "autosize": {"type": "fit-x", "contains": "padding"},
+        "data": {"values": values},
+        "layer": [
+            {
+                "mark": {"type": "bar", "color": MARKER, "cornerRadiusEnd": 3},
+                "encoding": {
+                    "y": y,
+                    "x": {**x, "title": "Score", "axis": {"values": [0, 2, 4, 6, 8, 10], "format": "d"}},
+                    "tooltip": [{"field": "experiment", "title": "Experiment"},
+                                {"field": "score", "title": f"{setting} score"},
+                                {"field": "moon_status", "title": "Moon status"},
+                                {"field": "reason", "title": "Why"}],
+                },
+            },
+            {   # the score at the end of each bar
+                "mark": {"type": "text", "align": "left", "dx": 4, "color": REFERENCE},
+                "encoding": {"y": y, "x": x, "text": {"field": "score", "type": "quantitative"}},
+            },
+        ],
+    }
+
+
+def rank_chart_alt(records: list[dict], score_column: str, setting: str) -> str:
+    """Short accessible name for rank_chart(): names the top-scoring experiment(s)."""
+    scored = [r for r in records if r.get(score_column) is not None]
+    if not scored:
+        return f"{setting} scores: none available"
+    best = max(r[score_column] for r in scored)
+    top = sorted(r["short_name"] for r in scored if r[score_column] == best)
+    return f"{setting} scores for {len(scored)} experiments; highest is {', '.join(top)} at {best} of 10"

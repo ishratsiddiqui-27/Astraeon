@@ -1,0 +1,20 @@
+# Astraeon theme: dark "mission control" look. Same colours as the Figma prompt, so the design and the app match.
+# Locked to dark mode (no [theme.light] / [theme.dark] sections), because the charts are tuned for a dark background.
+
+[theme]
+base = "dark"
+primaryColor = "#C2410C"              # buttons, sliders, active nav (white text on it passes WCAG AA)
+backgroundColor = "#0B1020"           # page
+secondaryBackgroundColor = "#141B2E"  # cards, inputs
+textColor = "#E6E9F2"
+borderColor = "#2A3550"
+linkColor = "#FDBA74"
+blueColor = "#60A5FA"                 # "Confirmed match" badge, Moon-zone data
+orangeColor = "#F97316"               # "Near miss" badge, ember highlight
+grayColor = "#9AA3B8"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+baseRadius = "10px"
+chartCategoricalColors = ["#60A5FA", "#F97316", "#7C8699", "#A78BFA", "#34D399", "#FBBF24", "#F472B6"]
+dataframeHeaderBackgroundColor = "#141B2E"
+dataframeBorderColor = "#2A3550"
