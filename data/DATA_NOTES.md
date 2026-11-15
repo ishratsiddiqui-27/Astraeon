@@ -33,7 +33,7 @@ Any **blank/empty cell** indicates that the value was **unknown or not reported*
 | `o2_min` | float | Lowest oxygen percentage tested in any gas stream (numeric for UI sliders) | `12`, `21.5`, `17` |
 | `o2_max` | float | Highest oxygen percentage tested in any gas stream, **including burner-flow O2 in inverse-flame tests**. For chamber air, read `o2_percent` | `85`, `22.1`, `40` |
 | `study_type` | enum/string | Nature of the investigation | `flight`, `modeling`, or `ground` |
-| `notes` | string | Important scientific caveats and exploration context | High O2 burner flow, partial gravity, non-combustion |
+| `notes` | string | Important scientific caveats and exploration context | High O2 burner flow, per-test pairing unconfirmed, non-combustion |
 
 ---
 
@@ -79,7 +79,7 @@ The `topic` column represents **primary operational relevance**, not an absolute
 ## 5. Gravity Environments & Partial Gravity
 
 - **No Dedicated Partial-Gravity Flight Data in PSI:** NASA's PSI database does not currently contain dedicated lunar ($0.16g$) or Martian ($0.38g$) flight experiments.
-- **`acme_efield` (Partial-Gravity Analogue):** ACME E-FIELD is the **only investigation** in this dataset directly addressing partial gravity: the electric field acted on the flame's ions to mimic partial gravity.
+- **`acme_efield` (not a partial-gravity test):** The electric field acted on ions in the flame and drove ion-driven convection. Microgravity was used *"for isolating electric field effects from buoyancy forces"* (PSI-22). PSI-22 does not mention partial gravity, and states that the research *"is not being conducted to serve any space applications."* Earlier versions of this dataset (before November 15, 2026) said the field "mimicked partial gravity". That claim was removed because PSI-22 does not support it.
 - **`acme_cfig`:** Two kinds of test. Normal-flame tests burned in chamber air of **18–40% O2** at 0.5–3 bar. Inverse-flame tests fed up to **85% O2 through the burner** into a fuel-filled chamber. The 85% figure is burner flow, not chamber air. The 18–40% chamber-air tests are the ones that matter for Moon-base conditions (section 6).
 - **`daft` (Non-Combustion Test):** DAFT and DAFT-2 evaluated particulate counter hardware in microgravity using inert Arizona Road Dust (ARD). No fuel was burned; `fuel_type` is left blank.
 - **`psi142` (Ground Experiment at High Pressure):** Operated at up to 20 atm in a ground laboratory counterflow burner with `gravity = normal gravity`. Due to extreme non-spacecraft conditions, its relevance score to habitable spacecraft design should be considered low.
@@ -129,11 +129,11 @@ So 17 is the conservative count of hot flames at Moon-base conditions.
 - CFI-G was designed to study cool flames, not cabin fire safety. These are diluted gaseous fuels on a spherical porous burner, not cabin materials.
 
 ### C. Headline (offered to Person 4 and Person 5)
-> Of the 24 NASA microgravity combustion investigations in PSI, only one, ACME CFI-G, has test-by-test records of flames burning at likely Moon-base conditions (30% or more oxygen, 10.2 psi or less): 17 hot-flame ignitions at 33–39% oxygen and 7.35 psi, all with gaseous fuels. FLEX came within 0.1–0.3 psi: 17 liquid-droplet tests (methanol and heptane) burned at 30–34% oxygen and 10.3–10.5 psi. No solid-material fire test is confirmed at those conditions, and none was run in true partial gravity.
+> Of the 24 NASA microgravity combustion investigations in PSI, only one, ACME CFI-G, has test-by-test records of flames burning at likely Moon-base conditions (30% or more oxygen, 10.2 psi or less): 17 hot-flame ignitions at 33–39% oxygen and 7.35 psi, all with gaseous fuels. FLEX came within 0.1–0.3 psi: 17 liquid-droplet tests (methanol and heptane) burned at 30–34% oxygen and 10.3–10.5 psi. No solid-material fire test is confirmed at those conditions, and none was run in partial gravity.
 
 ### D. The Partial-Gravity Gap
 - **Zero actual partial-gravity ($0.16g$ lunar / $0.38g$ Martian) flight test data** currently exists in NASA's PSI database.
-- **`acme_efield`** is the only entry that addresses this gap, where the electric field acted on flame ions to mimic partial gravity.
+- **No entry in this dataset addresses partial gravity,** not even as an analogue. `acme_efield` was listed here before November 15, 2026; see section 5 for why it was removed.
 
 ---
 
@@ -182,5 +182,6 @@ Rows changed by the table check:
 | `flex2` | O2 max 40% → 30%; conflict noted (approach text says 0.1–0.4) | PSI-68 table vs. approach text |
 | `acme_sflame` | Pressure ~1 atm added | PSI-23 table note |
 | `acme_bre` | Note added: per-test pressures not published | PSI-20 table note |
+| `acme_efield` | "Mimicked partial gravity" removed from `what_varied` and `notes` (not in PSI-22); fuel concentration in N2 corrected from 40–100% to 25–100% | PSI-22 page text and experiment table (32 rows) |
 
 **PSI coverage (feature check, November 15, 2026).** PSI lists 133 investigations, and 24 are tagged "Combustion Science". All 24 are in this dataset, so no rows were missing. One related non-combustion entry exists: PSI-179, Aerosol Sampling Experiment (ASE), under Complex Fluids. It is passive sampling of ISS cabin particles, not a fire test, so it was not added.
