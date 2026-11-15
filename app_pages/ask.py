@@ -7,7 +7,7 @@ import os
 
 import streamlit as st
 
-from astraeon import rag, ui
+from astraeon import rag, style, ui
 
 MAX_QUESTIONS = 20          # per browser session, to stay inside the free Gemini quota
 MAX_CHARS = 500
@@ -33,16 +33,23 @@ def secret(name: str) -> str | None:
     return value or os.environ.get(name)
 
 
-def show_sources(sources: list[dict]) -> None:
+def show_sources(sources: list[dict], key: str) -> None:
+    """Numbered source chips, then the quoted passages in an expander."""
     if not sources:
         return
-    with st.expander(f"Sources ({len(sources)})", icon=":material/menu_book:"):
+    style.eyebrow("Sources for this answer")
+    with st.grid(2, gap="small", min_column_width=240):
         for s in sources:
-            title = ui.md(s["title"])
-            label = f"[{title}]({s['source']})" if s["source"].startswith("http") else f"{title} · {ui.md(s['source'])}"
-            st.markdown(f"**[{s['n']}]** {label}")
+            with ui.card(f"{key}_src_{s['n']}"):
+                title = ui.md(s["title"])
+                st.markdown(f"**[{s['n']}]** [{title}]({s['source']})" if s["source"].startswith("http")
+                            else f"**[{s['n']}]** {title}")
+                if not s["source"].startswith("http"):
+                    st.caption(ui.md(s["source"]))
+    with st.expander("Quoted passages", icon=":material/format_quote:"):
+        for s in sources:
             for quote in s["quotes"]:
-                st.caption(ui.md(quote))
+                st.caption(f"[{s['n']}] {ui.md(quote)}")
 
 
 rag.load_dotenv()           # local runs: read GEMINI_API_KEY from .env
@@ -52,20 +59,19 @@ if "ask_history" not in st.session_state:
     st.session_state.ask_history = []
 history = st.session_state.ask_history
 
-st.title("Ask Astraeon", anchor=False)
-st.caption("Answers come only from Astraeon's data: the NASA PSI experiments, the Moon-base test records, the "
-           "rankings, fire history and research gaps. Every answer lists its sources.")
+style.page_header("Research copilot", "Ask Astraeon.",
+                  "Explore the research. Follow every claim back to its source.", pill="Source-led answers")
 if not api_key:
     st.info("AI answers are off because no API key is set, so questions return the most relevant passages "
             "from the data instead.", icon=":material/key_off:")
 
-for msg in history:
+for i, msg in enumerate(history):
     with st.chat_message(msg["role"], avatar=":material/rocket_launch:" if msg["role"] == "assistant" else None):
         st.markdown(msg["content"])
-        show_sources(msg.get("sources", []))
+        show_sources(msg.get("sources", []), key=f"ask_{i}")
 
 asked = sum(1 for m in history if m["role"] == "user")
-prompt = st.chat_input("Ask about the experiments, Moon-base air or fire history", max_chars=MAX_CHARS,
+prompt = st.chat_input("Ask about an experiment, an atmosphere or an evidence gap", max_chars=MAX_CHARS,
                        submit_mode="disable", disabled=asked >= MAX_QUESTIONS)
 if asked >= MAX_QUESTIONS:
     st.caption(f"That's the {MAX_QUESTIONS}-question limit for this session. Reload the page to start over.")
@@ -113,5 +119,7 @@ if prompt:
             st.error(text, icon=":material/error:")
         else:
             st.markdown(text)
-        show_sources(sources)
+        show_sources(sources, key=f"ask_{len(history)}")
     history.append({"role": "assistant", "content": text, "sources": sources})
+
+st.caption("AI answers can be wrong. Check the sources before relying on a claim. Not operational safety advice.")

@@ -21,7 +21,9 @@ pip install streamlit
 streamlit run app.py
 ```
 
-Eight pages, in the top navigation: **Home** (headline finding and Moon-base chart), **Experiments** (filters, cards, details, CSV download), **Rank by setting**, **Compare**, **Moon-base explorer**, **Fire history & gaps**, **Ask Astraeon** (AI answers with sources), **About**. The theme (dark, fonts, colours) is in `.streamlit/config.toml`. Deployed on Streamlit Community Cloud with `app.py` as the main file.
+Eight pages, in the top navigation: **Home** (headline finding and Moon-base chart), **Experiments** (filters, cards, details, CSV download, add to comparison), **Rank** (scores per setting with the method), **Compare** (up to 3 side by side), **Moon-base** (atmosphere explorer), **Fire history** (incidents and what we don't know), **Ask Astraeon** (AI answers with sources), **About** (evidence policy, sources, glossary). Deployed on Streamlit Community Cloud with `app.py` as the main file.
+
+**Look and feel** (from the team's Figma design): colours and fonts in `.streamlit/config.toml`; the starfield, glass cards, glow, orbiting Moon and fade-ins in `astraeon/style.py`; the logo in `assets/logo.svg`. Cards are keyed containers (`st.container(key="card_...")`) styled through Streamlit's `st-key-...` class, so if a selector stops matching after a Streamlit upgrade the page falls back to the plain dark theme. Animations switch off for visitors who ask their system for reduced motion.
 
 ### Ask Astraeon (RAG)
 
@@ -46,6 +48,7 @@ Eight pages, in the top navigation: **Home** (headline finding and Moon-base cha
 | `astraeon/data.py` | Data layer for the app: `load_all()` joins every file by id into one table; `show()` turns blanks into "Not reported" | **Person 1 + Person 3** |
 | `astraeon/charts.py` | Ready-made charts: `moon_chart()` (oxygen vs. pressure with the Moon-base zone), `rank_chart()` (scores for one setting) | **Person 1** |
 | `astraeon/ui.py` | Streamlit pieces shared by the pages: cached loaders, badges, experiment cards, the details dialog | **Person 1** |
+| `astraeon/style.py`, `assets/logo.svg` | The design: global CSS, page headers, hero Moon art, stat tiles, timeline, footer | **Person 1** |
 | `astraeon/rag.py`, `app_pages/ask.py` | Ask Astraeon: passages from the data files, BM25 retrieval, Claude answers with citations | **Person 1** |
 | `app.py`, `app_pages/`, `.streamlit/config.toml` | The dashboard: navigation, the seven pages, the theme | **Person 1** |
 | `data/moon_evidence.csv` | One Moon-evidence badge per experiment (confirmed, near miss, not confirmed, ...) with a one-line reason | **Person 1** |

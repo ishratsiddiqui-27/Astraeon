@@ -150,6 +150,7 @@ def moon_chart(max_psi: float = 50, height: int = 420, selected: tuple[float, fl
     return {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "title": {"text": title, "subtitle": subtitle, "anchor": "start"},
+        "background": "transparent",       # sits on the app's glass cards
         "width": "container",
         "height": height,
         # Streamlit's theme fits the WHOLE chart (title + legends + plot) into `height`, which squashes
@@ -176,6 +177,7 @@ def rank_chart(records: list[dict], score_column: str, setting: str, bar_height:
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "title": {"text": f"{setting}: fire-safety relevance, 0 to 10", "anchor": "start",
                   "subtitle": "10 means the experiment's findings apply directly to this setting."},
+        "background": "transparent",
         "width": "container",
         "height": max(1, len(values)) * bar_height,
         "autosize": {"type": "fit-x", "contains": "padding"},

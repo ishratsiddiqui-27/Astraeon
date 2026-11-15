@@ -1,45 +1,57 @@
 """Fire history & gaps: real spacecraft fires, and what the PSI data can't tell us yet."""
-import streamlit as st
-
-from astraeon import ui
 from urllib.parse import urlparse
 
-st.title("Fire history & gaps", anchor=False)
-st.caption("Why spacecraft fire safety matters, and what the experiments in this dataset don't cover yet.")
+import streamlit as st
+
+from astraeon import style, ui
+
+incidents = ui.incidents()
+gaps = ui.research_gaps()
+
+style.page_header("Lessons from flight", "Fire changed the mission.",
+                  "Different failures, one shared lesson: understand ignition, containment and escape before "
+                  "people live with fire risk.")
 
 # --- Incidents ---------------------------------------------------------------------------------------------
-st.subheader("Fires in crewed spaceflight", anchor=False, icon=":material/history:")
-for incident in ui.incidents():
-    with st.container(border=True):
-        date_col, text_col = st.columns([1, 4], gap="medium")
-        with date_col:
-            st.markdown(f"### {incident.get('date', '')[:4]}")
-            st.caption(ui.long_date(incident.get("date", "")))
-        with text_col:
-            st.markdown(f"**{ui.md(incident['name'])}**")
-            st.markdown(ui.md(incident.get("summary", "")))
-            if incident.get("related_names"):
-                st.caption("Related experiments")
-                ui.name_badges(incident["related_names"])
-            if incident.get("data_note"):
-                st.caption(ui.md(incident["data_note"]))
-            sources = incident.get("sources", [])
-            if sources:
-                links = " · ".join(f"[{urlparse(url).netloc.removeprefix('www.')}]({url})" for url in sources)
-                st.caption(f"Sources: {links}")
+if incidents:
+    style.timeline([inc.get("date", "")[:4] for inc in incidents])
+    for col, inc in zip(st.columns(len(incidents), gap="medium"), incidents):
+        with col:
+            with ui.card(f"incident_{inc['id']}", height="stretch"):
+                style.card_title(inc["name"])
+                st.caption(ui.long_date(inc.get("date", "")))
+                st.markdown(ui.md(inc.get("summary", "")))
+                if inc.get("related_names"):
+                    st.caption("RELATED EXPERIMENTS")
+                    ui.name_badges(inc["related_names"])
+                if inc.get("data_note"):
+                    st.caption(ui.md(inc["data_note"]))
+                st.space("stretch")
+                sources = inc.get("sources", [])
+                if sources:
+                    links = " · ".join(f"[{urlparse(u).netloc.removeprefix('www.')}]({u})" for u in sources)
+                    st.caption(f"Sources: {links}")
 
 # --- Research gaps -----------------------------------------------------------------------------------------
-gaps = ui.research_gaps()
 if gaps:
-    st.subheader("What we don't know yet", anchor=False, icon=":material/help_outline:")
-    with st.grid(2, gap="medium", min_column_width=320):
+    st.space("medium")
+    with st.container(horizontal=True, vertical_alignment="bottom"):
+        st.subheader("What we don't know", anchor=False)
+        st.space("stretch")
+        st.caption("History raises the questions. This data doesn't answer them yet.")
+    with st.grid(len(gaps), gap="medium", min_column_width=230):
         for gap in gaps:
-            with st.container(border=True, height="stretch"):
+            with ui.card(f"gap_{gap['id']}", height="stretch"):
+                style.eyebrow("Open question")
                 st.markdown(f"**{ui.md(gap['title'])}**")
-                st.markdown(ui.md(gap.get("summary", "")))
+                st.caption(ui.md(gap.get("summary", "")))
                 if gap.get("evidence"):
                     st.caption(ui.md(gap["evidence"]))
-                if gap.get("related_names"):
+                st.space("stretch")
+                if gap.get("related_names") and len(gap["related_names"]) <= 4:
                     ui.name_badges(gap["related_names"])
-                if gap.get("source"):
-                    st.caption(f"Source: {ui.md(gap['source'])}")
+                elif gap.get("related_names"):
+                    st.caption(f"{len(gap['related_names'])} related experiments")
+
+style.note("Note", "Incident summaries are written from NASA and other public accounts. The events are separate; "
+                   "this timeline is not a common-cause model.")
