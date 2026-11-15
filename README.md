@@ -23,6 +23,47 @@
 | `data_report.py` | Prints completeness counts and the Moon-base screen for `investigations.csv` | **Person 1** |
 | `data/moon_tests.csv` | One row per flight test with chamber oxygen and pressure (746 tests from PSI). For the oxygen vs. pressure chart with the Moon-base zone | **Person 1** |
 | `build_moon_tests.py` | Rebuilds `data/moon_tests.csv` by downloading the experiment tables from NASA PSI (needs internet) | **Person 1** |
+| `astraeon/data.py` | Data layer for the app: `load_all()` joins every file by id into one table; `show()` turns blanks into "Not reported" | **Person 1 + Person 3** |
+| `astraeon/charts.py` | Ready-made charts: `moon_chart()` (oxygen vs. pressure with the Moon-base zone) | **Person 1** |
+| `data/moon_evidence.csv` | One Moon-evidence badge per experiment (confirmed, near miss, not confirmed, ...) with a one-line reason | **Person 1** |
+| `data/images.csv`, `assets/images/` | Real experiment photos from PSI, only those with a stated license (CC0-1.0) | **Person 1** |
+| `data/timeline.csv` | Investigation start and end dates and flight platform from PSI | **Person 1** |
+| `build_psi_extras.py` | Rebuilds `images.csv`, `assets/images/` and `timeline.csv` from NASA PSI (needs internet) | **Person 1** |
+
+### Using the data in the Streamlit app
+
+Pages import the data layer instead of reading files themselves, so every page shows the same numbers:
+
+```python
+import streamlit as st
+from astraeon.data import load_all, load_glossary, show, SCORE_COLUMNS, MOON_NOTE
+from astraeon.charts import moon_chart, MOON_CHART_ALT
+
+@st.cache_data
+def get_experiments():
+    return load_all()        # one row per experiment: data + rankings + summaries + badge + photo
+
+df = get_experiments()
+st.vega_lite_chart(moon_chart(), alt=MOON_CHART_ALT)
+st.caption(MOON_NOTE)
+for _, row in df.iterrows():
+    with st.container(border=True):
+        if row["image_file"]:
+            st.image(row["image_file"], caption=row["image_credit"], alt=f"Photo from {row['short_name']}", width="stretch")
+        st.subheader(row["short_name"])
+        st.badge(row["moon_status_label"], color=row["moon_status_color"])   # Person 3's moon_status
+        st.caption(row["moon_takeaway"])
+        st.text(f"Pressure: {show(row['pressure_psi'])}")
+```
+
+`load_glossary()` returns Person 3's `{term: definition}` for hover help.
+
+Notes for the app:
+- For an oxygen filter, use the numeric `o2_min` / `o2_max` columns, not `o2_percent` (that one is text). Keep "not reported" experiments visible.
+- `o2_max` = 85 for `acme_cfig` and `acme_flamedesign` is burner-flow oxygen, not cabin air.
+- Only 4 experiments have photos. Give the others a fallback card (for example the topic colour).
+- Streamlit 1.67: `use_container_width` is deprecated (use `width="stretch"`); for multipage apps use `st.navigation` with an `app_pages/` folder, not `pages/`.
+- To check the data layer in Streamlit (in GitHub Codespaces): `pip install streamlit`, then `streamlit run preview_data.py`.
 
 ---
 

@@ -186,4 +186,9 @@ Rows changed by the table check:
 | `acme_bre` | Note added: per-test pressures not published | PSI-20 table note |
 | `acme_efield` | "Mimicked partial gravity" removed from `what_varied` and `notes` (not in PSI-22); fuel concentration in N2 corrected from 40–100% to 25–100% | PSI-22 page text and experiment table (32 rows) |
 
+**Supporting files for the app (November 15, 2026).**
+- `data/moon_evidence.csv`: one Moon-evidence level per experiment, summarizing section 6B. `validate_csv.py` checks it against `investigations.csv` (oxygen) and `moon_tests.csv` (only an experiment with tests inside the zone can be "confirmed").
+- `data/images.csv` and `assets/images/`: 6 photos for 4 experiments (`acme_cfig`, `acme_efield`, `bass2`, `daft`), downloaded from PSI's "Representative Image(s)", all CC0-1.0. `acme_flamedesign` (PSI-10) has 4 photos, but its PSI record states no license, so they were left out. The other 19 experiments have no photos on PSI; PSI's "thumbnail" for every investigation is the same placeholder image.
+- `data/timeline.csv`: investigation start and end dates from PSI (the project period, not flight dates). 21 of 24 have a start date; PSI lists none for `slice`, `spice` and `acme_cfig`.
+
 **PSI coverage (feature check, November 15, 2026).** PSI lists 133 investigations, and 24 are tagged "Combustion Science". All 24 are in this dataset, so no rows were missing. One related non-combustion entry exists: PSI-179, Aerosol Sampling Experiment (ASE), under Complex Fluids. It is passive sampling of ISS cabin particles, not a fire test, so it was not added.

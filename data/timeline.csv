@@ -1,0 +1,25 @@
+id,psi_id,investigation_start,investigation_end,flight_platform,source_page
+psi117,PSI-117,2017-02-15,2022-02-14,,https://psi.nasa.gov/physci/repo/data/investigations/PSI-117
+acme_cfig,PSI-159,,,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-159
+acme_flamedesign,PSI-10,1999-01-14,2025-04-30,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-10
+psi62,PSI-62,2019-05-01,2021-04-30,,https://psi.nasa.gov/physci/repo/data/investigations/PSI-62
+psi60,PSI-60,2019-06-05,2022-08-29,,https://psi.nasa.gov/physci/repo/data/investigations/PSI-60
+samer,PSI-101,2010-07-01,2010-09-30,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-101
+psi115,PSI-115,2017-01-30,2019-12-31,Not Applicable,https://psi.nasa.gov/physci/repo/data/investigations/PSI-115
+saffire1,PSI-98,2001-03-02,2008-02-28,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-98
+cfi,PSI-39,2020-10-01,2021-10-20,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-39
+same,PSI-102,2001-03-02,2008-02-28,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-102
+slice,PSI-106,,,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-106
+saffire2,PSI-99,2016-09-30,2017-04-01,Cygnus Spacecraft,https://psi.nasa.gov/physci/repo/data/investigations/PSI-99
+spice,PSI-107,,,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-107
+saffire3,PSI-100,2017-04-18,,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-100
+acme_cld,PSI-21,2006-10-01,2022-05-31,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-21
+bass2,PSI-25,2010-01-01,2022-12-31,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-25
+acme_bre,PSI-20,2010-01-01,2025-02-08,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-20
+flex2,PSI-68,2016-08-12,2019-09-30,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-68
+acme_efield,PSI-22,2016-11-18,2020-11-17,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-22
+acme_sflame,PSI-23,2015-02-05,2019-11-24,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-23
+flex,PSI-69,2007-08-01,2016-07-31,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-69
+daft,PSI-47,2003-03-01,2009-06-01,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-47
+bass,PSI-26,2009-10-01,2013-06-30,International Space Station (ISS),https://psi.nasa.gov/physci/repo/data/investigations/PSI-26
+psi142,PSI-142,2016-08-01,2021-07-31,Not Applicable,https://psi.nasa.gov/physci/repo/data/investigations/PSI-142

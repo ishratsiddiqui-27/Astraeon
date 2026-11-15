@@ -1,0 +1,25 @@
+id,evidence_level,evidence_detail
+psi117,not_reported,Modeling study; PSI does not report oxygen levels.
+acme_cfig,confirmed,"20 tests at 33-39% chamber oxygen and 7.35 psi, 17 with hot ignition (PSI-159 experiment table)."
+acme_flamedesign,high_oxygen_normal_pressure,Chamber oxygen reached 40% only at about 1 atm (13.7-19.1 psi).
+psi62,not_reported,Modeling study; PSI does not report oxygen levels.
+psi60,not_reported,Modeling study; PSI does not report oxygen levels.
+samer,not_reported,PSI does not report oxygen levels for this experiment.
+psi115,not_reported,Modeling study; PSI does not report oxygen levels.
+saffire1,below_moon_oxygen,"Oxygen 21.5-21.7%, below Moon-base levels."
+cfi,below_moon_oxygen,"Oxygen 17-21%, below Moon-base levels."
+same,not_reported,PSI does not report oxygen levels for this experiment.
+slice,not_reported,PSI does not report oxygen levels for this experiment.
+saffire2,below_moon_oxygen,"Oxygen about 21.5-22.1%, below Moon-base levels."
+spice,not_reported,PSI does not report oxygen levels for this experiment.
+saffire3,not_reported,PSI does not report oxygen levels for this experiment.
+acme_cld,not_reported,PSI does not report oxygen levels for this experiment.
+bass2,below_moon_oxygen,"Oxygen 13.6-22.2% (lowered with nitrogen), below Moon-base levels."
+acme_bre,unconfirmed,"Planned 8.2 psia with 34% oxygen, but PSI does not record the pressure of each test."
+flex2,unconfirmed,"Oxygen (17-30%) and pressure (7.3-44.1 psi) ranges overlap Moon-base conditions, but PSI does not tie them to the same test."
+acme_efield,not_reported,PSI does not report oxygen levels; not a partial-gravity test.
+acme_sflame,high_oxygen_normal_pressure,"About 30% oxygen, but only at about 1 atm (14.7 psi)."
+flex,near_miss,"17 tests at 30-34% oxygen ran at 10.3-10.5 psi, just above the 10.2 psi limit."
+daft,not_a_fire_test,No fuel was burned; this tested particle counters.
+bass,not_reported,PSI does not report oxygen levels for this experiment.
+psi142,not_reported,Ground lab study at up to 20 atm; PSI does not report its oxygen levels.

@@ -1,0 +1,7 @@
+id,psi_id,image_path,original_file,is_primary,license,credit,source_page
+acme_cfig,PSI-159,assets/images/acme_cfig_1.jpg,PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg,yes,CC0-1.0,NASA Physical Sciences Informatics (PSI-159),https://psi.nasa.gov/physci/repo/data/investigations/PSI-159
+bass2,PSI-25,assets/images/bass2_1.jpg,PSI-25_Representative Image(s)_BASS-II_flame testing.jpg,yes,CC0-1.0,NASA Physical Sciences Informatics (PSI-25),https://psi.nasa.gov/physci/repo/data/investigations/PSI-25
+acme_efield,PSI-22,assets/images/acme_efield_1.jpg,PSI-22_Representative Image(s)_E-Field flames blue 2.jpg,yes,CC0-1.0,NASA Physical Sciences Informatics (PSI-22),https://psi.nasa.gov/physci/repo/data/investigations/PSI-22
+acme_efield,PSI-22,assets/images/acme_efield_2.jpg,PSI-22_Representative Image(s)_E-Field Flames.jpg,no,CC0-1.0,NASA Physical Sciences Informatics (PSI-22),https://psi.nasa.gov/physci/repo/data/investigations/PSI-22
+acme_efield,PSI-22,assets/images/acme_efield_3.jpg,PSI-22_Representative Image(s)_E-Field Flames blue.jpg,no,CC0-1.0,NASA Physical Sciences Informatics (PSI-22),https://psi.nasa.gov/physci/repo/data/investigations/PSI-22
+daft,PSI-47,assets/images/daft_1.jpg,PSI-47_Representative Image(s)_DAFT on ISS.jpg,yes,CC0-1.0,NASA Physical Sciences Informatics (PSI-47),https://psi.nasa.gov/physci/repo/data/investigations/PSI-47
