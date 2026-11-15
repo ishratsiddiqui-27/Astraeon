@@ -1,98 +1,146 @@
 {
   "psi117": {
     "simple_summary": "This is a modeling study using data from FLEX, a flight experiment. It used computer simulations to test how outside heat or airflow disturbs cool flames (a cooler form of burning) on droplets of n-alkane, a liquid fuel. The simulations varied the strength and speed of the disturbance, the surrounding gas, the pressure and the droplet size to see what decides whether the flames survive.",
-    "why_it_matters": "Knowing what disturbs or ends these cool flames helps engineers design better ways to put out fires in space habitats."
+    "why_it_matters": "Knowing what disturbs or ends these cool flames helps engineers design better ways to put out fires in space habitats.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: this modeling study uses FLEX flight data and reports no oxygen or pressure values, so it has no Moon-base comparison of its own."
   },
   "acme_cfig": {
     "simple_summary": "Gas fuels (propane, n-butane, n-pentane and ethane) were burned in microgravity using the Combustion Integrated Rack. Researchers tested normal flames (fuel burning in surrounding air at 18 to 40% oxygen) and inverse flames (oxygen fed through the burner at up to 85%) at pressures of 7.2 to 48.0 psi, while changing the fuel, dilution and flow rate. Cameras, radiometers (heat-radiation sensors), photomultiplier tubes (light sensors) and thermocouples (temperature probes) were used to find the conditions where cool diffusion flames form.",
-    "why_it_matters": "It is the only experiment in this dataset with test-by-test records at expected Moon-base conditions (17 hot flames ignited at 33 to 39% ambient oxygen and 7.35 psi), though these were gas fuels on a spherical burner, not cabin materials."
+    "why_it_matters": "It is the only experiment in this dataset with test-by-test records at expected Moon-base conditions (17 hot flames ignited at 33 to 39% ambient oxygen and 7.35 psi), though these were gas fuels on a spherical burner, not cabin materials.",
+    "moon_status": "confirmed",
+    "moon_takeaway": "Confirmed match: it has test-by-test records of 17 hot flames at 33 to 39% ambient oxygen and 7.35 psi, inside the Moon-base zone (30% oxygen or more, 10.2 psi or less), but with gas fuels on a burner, not cabin materials."
   },
   "acme_flamedesign": {
     "simple_summary": "Ethylene and methane gas flames were burned from a spherical burner in microgravity using the Combustion Integrated Rack. Researchers tested normal flames (in air with 19.8 to 40% oxygen, the 40% only at about 1 atm, or 13.7 to 19.1 psi) and inverse flames (oxygen fed through the burner at 21.2 to 85%, including the low-pressure tests down to 6.2 psi), changing the fuel, flow rate, added inert gas (nitrogen or carbon dioxide) and pressure up to 44.2 psi. Cameras, radiometers, photomultiplier tubes and thermocouples measured when soot starts to form, flame temperatures and the limits at which the flames go out.",
-    "why_it_matters": "Understanding when soot forms and when flames go out helps engineers judge how fires start and behave in spacecraft, but its 85% oxygen was burner flow rather than chamber air, with ambient oxygen reaching 40% only at about 1 atm (13.7 to 19.1 psi)."
+    "why_it_matters": "Understanding when soot forms and when flames go out helps engineers judge how fires start and behave in spacecraft, but its 85% oxygen was burner flow rather than chamber air, with ambient oxygen reaching 40% only at about 1 atm (13.7 to 19.1 psi).",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match: chamber air reached 40% oxygen only at about 1 atm (13.7 to 19.1 psi), and its low-pressure, high-oxygen tests were inverse flames with the oxygen coming from the burner."
   },
   "psi62": {
     "simple_summary": "This is a modeling study using data from the BASS and BASS-II experiments. It used a computer method called flamelet generated manifolds to simulate how flames spread in the same direction as the airflow (concurrent spread) over PMMA plastic (flat sheets, spheres and rods) and wax cylinders. The simulations were compared with the BASS experiments (imaged with DSLR cameras), looking at microgravity versus normal gravity, to predict when spacecraft materials can burn.",
-    "why_it_matters": "Accurate computer models of flame spread help predict which spacecraft materials are safe, so fires can be prevented."
+    "why_it_matters": "Accurate computer models of flame spread help predict which spacecraft materials are safe, so fires can be prevented.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: this modeling study of BASS and BASS-II reports no oxygen or pressure values, so it has no Moon-base comparison of its own."
   },
   "psi60": {
     "simple_summary": "This is a modeling study using data from SPICE, a flight experiment on gas flames. It analyzed camera images (from DSLR cameras) to work out temperature patterns and how much soot, the tiny black particles in smoke, the flames made, comparing microgravity with normal gravity. The aim was to understand how soot forms, burns away and clumps together in heavily sooting flames.",
-    "why_it_matters": "Understanding how soot and smoke particles form helps in designing better smoke detection for spacecraft."
+    "why_it_matters": "Understanding how soot and smoke particles form helps in designing better smoke detection for spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: this modeling study of SPICE data reports no oxygen or pressure values, so it has no Moon-base comparison of its own."
   },
   "samer": {
     "simple_summary": "Pyrell (an intumescent, fire-retardant foam) and Kapton were heated to produce smoke in microgravity using the SAME hardware on the ISS. The tests varied the heating temperature, the smoke aging time and the airflow (8.1 cm/s or no flow). A DustTrak, an ionization detector, other particle instruments and thermal precipitators (devices that collect smoke particles for study) measured how big the liquid smoke droplets grew.",
-    "why_it_matters": "Knowing how large smoke droplets get in low gravity helps design smoke detectors that work in space."
+    "why_it_matters": "Knowing how large smoke droplets get in low gravity helps design smoke detectors that work in space.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "psi115": {
     "simple_summary": "This is a modeling study using data from SAME, a smoke experiment. It ran computer simulations of how smoke grows from dibutyl-phthalate (DBP), a chemical that acts as a smoke precursor (it turns into smoke particles), under two low-speed cross-flows. The simulations compared microgravity with Earth gravity to measure how 0g and 1g smoke differ and to find the fluid-flow reasons behind those differences.",
-    "why_it_matters": "Knowing how smoke behaves differently in microgravity helps in designing smoke detection for spacecraft."
+    "why_it_matters": "Knowing how smoke behaves differently in microgravity helps in designing smoke detection for spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: this modeling study of SAME data reports no oxygen or pressure values, so it has no Moon-base comparison of its own."
   },
   "saffire1": {
     "simple_summary": "A large piece of SIBAL fabric (75% cotton, 25% fiberglass, 94 x 40.6 cm) was burned in a Saffire flight unit on a Cygnus vehicle in microgravity. Air flowed over it at 20 cm/s with 21.5 to 21.7% oxygen, and the tests varied the flow direction (the same way as the flame spreads or the opposite way) and the burn time (420 s or 70 s). Cameras, thermocouples, radiometers and pressure, CO2, O2 and airflow sensors tracked how fast the fire grew compared with normal-gravity screening tests.",
-    "why_it_matters": "Showing how quickly a large fabric fire grows in low gravity helps decide which materials are safe to use in spacecraft."
+    "why_it_matters": "Showing how quickly a large fabric fire grows in low gravity helps decide which materials are safe to use in spacecraft.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match on oxygen: it ran at 21.5 to 21.7% oxygen, below the 30% Moon-base level, and its row reports no pressure."
   },
   "cfi": {
     "simple_summary": "Droplets of n-dodecane, farnesane and n-dodecane/iso-dodecane mixtures were burned in microgravity using the Combustion Integrated Rack and the Multi-User Droplet Combustion Apparatus. The tests varied the pressure (0.5 to 5 atm flown), the inert gas added (nitrogen or helium), the fuel and whether the droplet hung on a thin fiber or floated free, at 17 to 21% oxygen. Cameras and radiometers watched how droplet size, pressure and helium affected when the flames went out.",
-    "why_it_matters": "Understanding what puts out these droplet flames helps design fire suppression for spacecraft."
+    "why_it_matters": "Understanding what puts out these droplet flames helps design fire suppression for spacecraft.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match on oxygen: it ran at 17 to 21% oxygen, below the 30% Moon-base level, although its pressure range (7.3 to 73.5 psi) reaches below 10.2 psi."
   },
   "same": {
     "simple_summary": "Teflon, Kapton and silicone samples were heated to produce smoke in the Microgravity Science Glovebox. The tests varied the material, the air speed (5 or 10 cm/s), the rate of weight loss (1 or 2 mg/min) and how long the smoke aged (1 to 20 minutes). Two smoke detectors, video cameras and soot samplers measured how big the liquid smoke droplets grew, to help build computer models of smoke growth.",
-    "why_it_matters": "Knowing how large smoke droplets get in low gravity helps design smoke detectors that work in spacecraft."
+    "why_it_matters": "Knowing how large smoke droplets get in low gravity helps design smoke detectors that work in spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "slice": {
     "simple_summary": "Methane and ethylene gas flames, some diluted with nitrogen, were burned in microgravity in a flow duct. Researchers varied the fuel, the nitrogen dilution (20% to 100%), the burner diameter and the speed of the surrounding airflow (coflow). A high-resolution camera and flow and temperature sensors tracked how stable the flames were, how fast the flow had to be to lift a flame off the burner (liftoff), and how nitrogen changed soot and stability.",
-    "why_it_matters": "Learning what keeps a flame attached to a burner or blows it off helps predict how gas fires behave in spacecraft."
+    "why_it_matters": "Learning what keeps a flame attached to a burner or blows it off helps predict how gas fires behave in spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "saffire2": {
     "simple_summary": "SAFFIRE-II burned samples of SIBAL fabric (cotton and fiberglass), silicone, PMMA (a type of plastic) and PMMA with Nomex in microgravity inside a Cygnus cargo module. The tests varied the material, sample thickness (0.27 to 1.03 mm), airflow (20 or 30 cm/s) and flow direction, at about 21.5 to 22.1% oxygen. Cameras, thermocouples, radiometers and pressure, gas and airflow sensors recorded how fast the fires grew and compared low-gravity flammability limits with normal-gravity screening tests.",
-    "why_it_matters": "Showing how different materials burn in low gravity helps choose safer materials to prevent fires in spacecraft."
+    "why_it_matters": "Showing how different materials burn in low gravity helps choose safer materials to prevent fires in spacecraft.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match on oxygen: it ran at about 21.5 to 22.1% oxygen, below the 30% Moon-base level, and its row reports no pressure."
   },
   "spice": {
     "simple_summary": "Jets of methane, ethylene, propane and propylene gas, plus propylene mixtures, were burned in microgravity in the Microgravity Science Glovebox. Researchers varied the fuel, the burner diameter (0.41 to 1.6 mm), the fuel flow rate and the speed of the surrounding airflow (5.4 to 65 cm/s). Cameras, airflow sensors and radiometers were used to find each flame's smoke point (where it starts giving off smoke) and how sooty each fuel is.",
-    "why_it_matters": "Knowing when and how much a flame produces smoke helps in designing smoke detection for spacecraft."
+    "why_it_matters": "Knowing when and how much a flame produces smoke helps in designing smoke detection for spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "saffire3": {
     "simple_summary": "A large sheet of SIBAL fabric (0.33 x 94 x 40.6 cm) was burned in microgravity inside the Saffire III enclosure on a Cygnus vehicle. Air flowed over it at 30 cm/s, and the test varied the flow direction (the same way as the flame spreads or the opposite way). Cameras, thermocouples, radiometers and pressure, CO2, O2 and airflow sensors tracked how fast the fire grew compared with normal-gravity screening tests.",
-    "why_it_matters": "Showing how quickly a large fabric fire grows in low gravity helps decide which materials are safe to use in spacecraft."
+    "why_it_matters": "Showing how quickly a large fabric fire grows in low gravity helps decide which materials are safe to use in spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "acme_cld": {
     "simple_summary": "Methane and ethylene flames burning in a gentle surrounding airflow (coflow) were tested in microgravity using the Combustion Integrated Rack. Researchers varied the fuel, the nitrogen dilution, the flow velocity and the mass flow rate. Cameras, laser extinction, thin-filament pyrometry (a way to measure flame temperature) and thermocouples measured flame shape, liftoff, temperature, extinction limits and how sooty the flames were.",
-    "why_it_matters": "Knowing how weak gas flames behave and when they go out helps prevent and understand fires in spacecraft."
+    "why_it_matters": "Knowing how weak gas flames behave and when they go out helps prevent and understand fires in spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "bass2": {
     "simple_summary": "PMMA (a type of plastic) as films, rods, slabs and spheres, plus cellulose and a composite fabric, were burned in a small wind tunnel in the Microgravity Science Glovebox. The tests varied the airflow speed (up to 40 cm/s) and direction, the sample shape and the oxygen level (lowered with nitrogen, 13.6 to 22.2%). Video cameras, radiometers and carbon monoxide and carbon dioxide sensors tracked ignition, flame growth, flame spread and when the flames went out.",
-    "why_it_matters": "Finding out when and how these solid materials stop burning helps improve fire safety and suppression in spacecraft."
+    "why_it_matters": "Finding out when and how these solid materials stop burning helps improve fire safety and suppression in spacecraft.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match on oxygen: it ran at 13.6 to 22.2% oxygen, below the 30% Moon-base level, and its row reports no pressure."
   },
   "acme_bre": {
     "simple_summary": "Methane and ethylene gas, diluted with nitrogen, were burned from round porous burners (25 and 50 mm) in still air in microgravity using the Combustion Integrated Rack. The tests varied the fuel mixture, the burner size, the oxygen level (21% to 40%), the pressure (8.2 to 14.7 psia) and the fuel flow rate. Heat flux and burner surface temperature sensors measured the burning to see whether these burners can imitate how liquid and solid (condensed) fuels burn.",
-    "why_it_matters": "Its objectives list planned exploration atmospheres, such as 8.2 psia with 34% oxygen, and its flight log shows 21 to 40% oxygen, but PSI does not record which pressure each test used, so it is not a confirmed Moon-base match."
+    "why_it_matters": "Its objectives list planned exploration atmospheres, such as 8.2 psia with 34% oxygen, and its flight log shows 21 to 40% oxygen, but PSI does not record which pressure each test used, so it is not a confirmed Moon-base match.",
+    "moon_status": "unconfirmed",
+    "moon_takeaway": "Unconfirmed: its objectives list 8.2 psia with 34% oxygen as a planned atmosphere and its flights ran at 21 to 40% oxygen, but PSI does not record the pressure of each test, so a Moon-base match cannot be confirmed."
   },
   "flex2": {
     "simple_summary": "Droplets of liquid fuels (iso-octane, n-octane, heptane, decane and ethanol, alone and mixed) were burned in microgravity using the Combustion Integrated Rack and the Multi-user Droplet Combustion Apparatus. The tests varied the fuel, the surrounding gas (oxygen with nitrogen or helium), the oxygen level (17% to 30% in the experiment table), the pressure (7.3 to 44.1 psi), the droplet size (1.5 to 5 mm) and the drift speed (0.1 to 5 cm/s). A high-speed color camera and pressure and temperature sensors tracked how the fuels burned, mixed and went out, including how much soot formed.",
-    "why_it_matters": "Understanding how droplet flames burn and go out helps design fire suppression for spacecraft, although the experiment table lists oxygen and pressure options per fuel rather than per test, so it cannot confirm 30% oxygen and 0.5 atm in the same burn."
+    "why_it_matters": "Understanding how droplet flames burn and go out helps design fire suppression for spacecraft, although the experiment table lists oxygen and pressure options per fuel rather than per test, so it cannot confirm 30% oxygen and 0.5 atm in the same burn.",
+    "moon_status": "unconfirmed",
+    "moon_takeaway": "Unconfirmed: the experiment table lists oxygen options up to 30% and pressure options from 0.5 atm for each fuel, not for each test, so it cannot confirm 30% oxygen at 0.5 atm in one burn."
   },
   "acme_efield": {
     "simple_summary": "Methane and ethylene flames diluted with nitrogen were burned in microgravity using the Combustion Integrated Rack while an electric field was applied. The tests varied the field strength (up to 10 kV), the mesh polarity, the fuel, the fuel mixture (25% to 100% fuel in nitrogen), the fuel flow and the coflow speed. Cameras, spectral imaging, thermopile detectors and ion current sensors measured how the electric current through the flame (carried by charged particles called ions) relates to voltage, how the flame responds, how much soot forms and how stable lifted flames are.",
-    "why_it_matters": "It shows how an electric field acting on charged particles in a flame changes its stability and soot, although PSI notes the research was not aimed at space applications."
+    "why_it_matters": "It shows how an electric field acting on charged particles in a flame changes its stability and soot, although PSI notes the research was not aimed at space applications.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, and it is not a partial-gravity test, so it does not address Moon gravity."
   },
   "acme_sflame": {
     "simple_summary": "Spherical flames of hydrogen, methane and ethylene were burned from a round porous burner in microgravity using the Combustion Integrated Rack. The tests varied the fuel, its dilution with nitrogen, helium or carbon dioxide, the oxygen level (about 21% to 30% at about 1 atm, or 14.7 psi) and the reactant flow rates. Imaging, thermocouples and radiometers measured how the flame structure changes over time, the limits at which convection or heat radiation puts the flames out, and pulsating instabilities.",
-    "why_it_matters": "Knowing what conditions put out spherical flames helps prevent fires and understand how they behave in spacecraft, but its roughly 30% oxygen tests ran at about 1 atm, so they are not a match for Moon-base pressure."
+    "why_it_matters": "Knowing what conditions put out spherical flames helps prevent fires and understand how they behave in spacecraft, but its roughly 30% oxygen tests ran at about 1 atm, so they are not a match for Moon-base pressure.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match: its tests at about 30% oxygen ran at about 1 atm (14.7 psi), above the 10.2 psi Moon-base limit."
   },
   "flex": {
     "simple_summary": "Droplets of methanol, n-heptane, n-octane, n-decane, n-butanol and Jet-A were burned in microgravity using the Combustion Integrated Rack and the Multi-user Droplet Combustion Apparatus. The tests varied the fuel, the droplet size (about 1.6 to 3 mm), the oxygen level (12% to 34%), the pressure (10.2 to 44.9 psi) and the added suppressant gas (CO2, helium or SF6). Cameras, radiometers and temperature sensors mapped when flames can burn, measured how well each gas puts fires out and found the Limiting Oxygen Index (the lowest oxygen level that still supports burning).",
-    "why_it_matters": "It shows how well different gases put out fires, and 17 of its tests at 30 to 34% oxygen ran at 10.3 to 10.5 psi, just above the Moon-base cutoff of 10.2 psi."
+    "why_it_matters": "It shows how well different gases put out fires, and 17 of its tests at 30 to 34% oxygen ran at 10.3 to 10.5 psi, just above the Moon-base cutoff of 10.2 psi.",
+    "moon_status": "near_miss",
+    "moon_takeaway": "Near miss: 17 droplet tests at 30 to 34% oxygen ran at 10.3 to 10.5 psi, just above the 10.2 psi Moon-base limit."
   },
   "daft": {
     "simple_summary": "This was a dust-sensor test, and nothing was burned. Researchers used Arizona Road Dust in 15-liter Mylar bags to make standard aerosols (tiny airborne particles) and sampled in different places, including Express rack 4, Port rack 6 and Node 1. They checked whether a modified TSI P-Trak particle counter works in microgravity by comparing it with a DustTrak counter.",
-    "why_it_matters": "These checks reduce the risk for the SAME smoke-detection experiments by showing that particle counters can work in microgravity."
+    "why_it_matters": "These checks reduce the risk for the SAME smoke-detection experiments by showing that particle counters can work in microgravity.",
+    "moon_status": "not_applicable",
+    "moon_takeaway": "Not applicable: this was a dust-sensor test with nothing burned, so it has no fire conditions to compare with a Moon base."
   },
   "bass": {
     "simple_summary": "SIBAL fabric, Nomex fabric, Ultem and PMMA (a type of plastic) spheres were burned in microgravity in a 76 mm x 76 mm flow duct in the Microgravity Science Glovebox. The tests varied the material, the shape (fabric, spheres, cylinders), the airflow speed (up to 40 cm/s) and the flow direction. Cameras filmed the flames from the top and edge to compare microgravity burning with NASA-STD-6001 Test #1, the normal-gravity material test, and to check how well nitrogen puts out the fire.",
-    "why_it_matters": "Showing how real materials burn in microgravity compared with ground tests helps decide which materials are safe to use in spacecraft."
+    "why_it_matters": "Showing how real materials burn in microgravity compared with ground tests helps decide which materials are safe to use in spacecraft.",
+    "moon_status": "cannot_check",
+    "moon_takeaway": "Cannot be checked: its row reports no oxygen or pressure, so it cannot be compared with Moon-base conditions."
   },
   "psi142": {
     "simple_summary": "This ground-based lab study in normal gravity burned dimethyl ether (DME), n-heptane and methane in a counterflow burner, where two gas streams flow toward each other. Pressure went up to 20 atm (294 psi), and the tests varied the oxygen level, the dilution, the fuel and whether ozone was added to sensitize the flame. Laser imaging of formaldehyde (CH2O PLIF) and temperature measurements were used to map the limits where cool flames can burn, building on FLEX data.",
-    "why_it_matters": "It links when flames can burn to when they go out, although its high-pressure ground conditions are far from a spacecraft habitat."
+    "why_it_matters": "It links when flames can burn to when they go out, although its high-pressure ground conditions are far from a spacecraft habitat.",
+    "moon_status": "not_a_match",
+    "moon_takeaway": "Not a match: this ground-based lab study in normal gravity ran at pressures up to 294 psi, far from Moon-base conditions."
   }
 }
