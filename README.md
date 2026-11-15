@@ -9,7 +9,7 @@
 | Person | Role | Files in this repo | Status |
 |---|---|---|---|
 | **Person 1** | Data collection and curation | `data/investigations.csv`: NASA PSI microgravity combustion experiments (24 experiments across solid, liquid, gas fuels and fire prevention, detection, suppression). **19 columns, frozen.** Docs and scripts listed below. | ✅ Complete & Verified |
-| **Person 2** | Rankings, built from `data/investigations.csv` | None yet | In Progress |
+| **Person 2** | Rankings, built from `data/investigations.csv` | `data/rankings.csv` (scores for spacecraft, station, Moon and rover), `data/RANKINGS_NOTES.md` (scoring rule and change log) | In Review |
 | **Person 3** | AI summaries, built from `data/investigations.csv` | None yet | In Progress |
 | **Person 4** | Spacecraft fire safety scenarios, suppression standards, and dashboard configuration parameters | `data/incidents.csv` (not in repo yet) | In Progress |
 | **Person 5** | Research and submission | None yet | In Progress |
