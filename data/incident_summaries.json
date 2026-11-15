@@ -1,0 +1,35 @@
+{
+  "apollo1": {
+    "name": "Apollo 1 cabin fire",
+    "date": "1967-01-27",
+    "summary": "On January 27, 1967, a fire broke out in the Apollo 1 command module during a launch rehearsal test and killed all three crew members. Investigators found the ignition source was electrical, and that the fire spread quickly because of combustible nylon material and the high-pressure, pure oxygen cabin air. The redesigned spacecraft used an oxygen-nitrogen mix, had flammable materials removed and got a hatch that opens in seconds.",
+    "related_experiments": ["bass", "bass2", "saffire1", "saffire2", "saffire3", "psi62"],
+    "data_note": "These experiments test solid materials such as fabrics and plastics. Where oxygen is reported for them it is 22.2% or lower, so none tested materials at Apollo 1-like or Moon-base oxygen.",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo1info.html",
+      "https://www.astronomy.com/space-exploration/apollo-1-tragedy-the-fatal-fire-and-its-aftermath/"
+    ]
+  },
+  "apollo13": {
+    "name": "Apollo 13 oxygen tank explosion",
+    "date": "1970-04-13",
+    "summary": "Apollo 13 launched on April 11, 1970, and an oxygen tank in its service module exploded on the way to the Moon. A review board concluded that damaged insulation around electrical parts in the second tank caused a short circuit that ignited the oxygen and the insulation material. The crew returned safely.",
+    "related_experiments": [],
+    "data_note": "This was a tank fire in the service module, not a cabin fire, and no experiment in this dataset tests that scenario, so it is context for why oxygen handling matters.",
+    "sources": [
+      "https://www.planetary.org/explore/space-topics/space-missions/apollo13.html",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/ap13acc.html"
+    ]
+  },
+  "mir_fire": {
+    "name": "Mir space station fire",
+    "date": "1997-02-24",
+    "summary": "On February 24, 1997, a solid-fuel oxygen generator canister ignited in Mir's Kvant-1 module, sending out a flame, sparks and molten metal and filling the module with dense smoke. The fire burned for about fourteen minutes and used up three fire extinguishers before it died out. Similar canisters had been used more than 2,500 times on Mir without an incident.",
+    "related_experiments": ["same", "samer", "spice", "psi115", "psi60", "daft", "flex", "flex2"],
+    "data_note": "Related by topic only: these experiments study smoke detection (same, samer, spice, psi115, psi60, daft) and fire suppression (flex, flex2), not this event.",
+    "sources": [
+      "https://www.nasa.gov/feature/25-years-ago-fire-aboard-space-station-mir",
+      "https://en.wikipedia.org/wiki/Mir_EO-23"
+    ]
+  }
+}
