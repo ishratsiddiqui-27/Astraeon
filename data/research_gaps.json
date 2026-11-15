@@ -1,0 +1,30 @@
+{
+  "solid_materials_moon": {
+    "title": "Solid cabin materials at Moon-base air",
+    "summary": "No solid cabin material, such as fabric or plastic, has been fire-tested in this dataset at Moon-base air (30% oxygen or more at 10.2 psi or less). The only tests at those conditions used gas fuels on a burner, not cabin materials.",
+    "evidence": "The material fire tests that report oxygen ran at 13.6 to 22.2% (bass2, saffire1, saffire2). ACME CFI-G's 17 hot-flame tests at 33 to 39% oxygen and 7.35 psi used gas fuels on a spherical burner.",
+    "related_experiments": ["bass2", "saffire1", "saffire2", "acme_cfig"],
+    "source": "DATA_NOTES sections 6B and 6C"
+  },
+  "partial_gravity": {
+    "title": "Partial gravity (Moon 0.16g, Mars 0.38g)",
+    "summary": "No experiment in the PSI database was run in lunar or Martian partial gravity, so flames at Moon gravity are not covered by this dataset. ACME E-FIELD is not a stand-in, because it is not a partial-gravity test.",
+    "evidence": "0 partial-gravity flight experiments in PSI. 23 of 24 experiments ran in microgravity and 1 (psi142) is a ground study in normal gravity.",
+    "related_experiments": ["acme_efield"],
+    "source": "DATA_NOTES sections 5, 6D and 7"
+  },
+  "pressure_records": {
+    "title": "Missing per-test pressure records",
+    "summary": "ACME BRE and FLEX-2 reach Moon-like oxygen and low pressure in their ranges, but PSI does not record which pressure went with which test. So neither is a confirmed Moon-base match.",
+    "evidence": "BRE's flight log lists 34% oxygen on 13 of 18 test days but does not identify the chamber pressures. FLEX-2's table lists oxygen and pressure options for each fuel, not for each test.",
+    "related_experiments": ["acme_bre", "flex2"],
+    "source": "DATA_NOTES sections 6A and 6B"
+  },
+  "missing_values": {
+    "title": "Blank oxygen and pressure values",
+    "summary": "Only 10 of 24 experiments report oxygen and only 8 report pressure, so most cannot be checked against Moon conditions at all. A blank means unknown, not zero.",
+    "evidence": "14 of 24 rows report no oxygen and 16 of 24 report no pressure. 13 report neither.",
+    "related_experiments": ["psi117", "psi62", "psi60", "samer", "psi115", "same", "slice", "spice", "saffire3", "acme_cld", "acme_efield", "daft", "bass"],
+    "source": "DATA_NOTES sections 1, 2, 6A and 7"
+  }
+}

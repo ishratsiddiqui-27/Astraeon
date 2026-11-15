@@ -4,7 +4,7 @@
     "date": "1967-01-27",
     "summary": "On January 27, 1967, a fire broke out in the Apollo 1 command module during a launch rehearsal test and killed all three crew members. Investigators found the ignition source was electrical, and that the fire spread quickly because of combustible nylon material and the high-pressure, pure oxygen cabin air. The redesigned spacecraft used an oxygen-nitrogen mix, had flammable materials removed and got a hatch that opens in seconds.",
     "related_experiments": ["bass", "bass2", "saffire1", "saffire2", "saffire3", "psi62"],
-    "data_note": "These experiments test solid materials such as fabrics and plastics. Where oxygen is reported for them it is 22.2% or lower, so none tested materials at Apollo 1-like or Moon-base oxygen.",
+    "data_note": "These experiments test solid materials such as fabrics and plastics. Of those that report oxygen (bass2, saffire1, saffire2), it is 22.2% or lower, so none of them tested materials at Apollo 1-like or Moon-base oxygen.",
     "sources": [
       "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo1info.html",
       "https://www.astronomy.com/space-exploration/apollo-1-tragedy-the-fatal-fire-and-its-aftermath/"
@@ -24,7 +24,7 @@
   "mir_fire": {
     "name": "Mir space station fire",
     "date": "1997-02-24",
-    "summary": "On February 24, 1997, a solid-fuel oxygen generator canister ignited in Mir's Kvant-1 module, sending out a flame, sparks and molten metal and filling the module with dense smoke. The fire burned for about fourteen minutes and used up three fire extinguishers before it died out. Similar canisters had been used more than 2,500 times on Mir without an incident.",
+    "summary": "On February 24, 1997, a solid-fuel oxygen generator canister ignited in Mir's Kvant-1 module, sending out a flame, sparks and molten metal and filling the module with dense smoke. The fire burned for several minutes and used up three fire extinguishers before it died out. Similar canisters had been used more than 2,500 times on Mir without an incident.",
     "related_experiments": ["same", "samer", "spice", "psi115", "psi60", "daft", "flex", "flex2"],
     "data_note": "Related by topic only: these experiments study smoke detection (same, samer, spice, psi115, psi60, daft) and fire suppression (flex, flex2), not this event.",
     "sources": [
