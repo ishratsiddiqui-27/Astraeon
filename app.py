@@ -24,6 +24,9 @@ page = st.navigation(
                      "ran nearby."),
         st.Page("app_pages/history.py", title="Fire history & gaps", icon=":material/history:",
                 help="Apollo 1, Apollo 13 and the Mir fire, and what the data can't tell us yet."),
+        st.Page("app_pages/ask.py", title="Ask Astraeon", icon=":material/forum:",
+                help="Ask a question in plain words. Answers come only from Astraeon's data, with numbered "
+                     "sources."),
         st.Page("app_pages/about.py", title="About", icon=":material/info:",
                 help="What Astraeon is, where the data comes from, how it was checked, and a glossary."),
     ],

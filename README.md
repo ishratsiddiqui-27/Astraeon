@@ -21,7 +21,18 @@ pip install streamlit
 streamlit run app.py
 ```
 
-Seven pages, in the top navigation: **Home** (headline finding and Moon-base chart), **Experiments** (filters, cards, details, CSV download), **Rank by setting**, **Compare**, **Moon-base explorer**, **Fire history & gaps**, **About**. The theme (dark, fonts, colours) is in `.streamlit/config.toml`. Deployed on Streamlit Community Cloud with `app.py` as the main file.
+Eight pages, in the top navigation: **Home** (headline finding and Moon-base chart), **Experiments** (filters, cards, details, CSV download), **Rank by setting**, **Compare**, **Moon-base explorer**, **Fire history & gaps**, **Ask Astraeon** (AI answers with sources), **About**. The theme (dark, fonts, colours) is in `.streamlit/config.toml`. Deployed on Streamlit Community Cloud with `app.py` as the main file.
+
+### Ask Astraeon (RAG)
+
+`astraeon/rag.py` turns the data files into 73 short passages (one per experiment, each section of `DATA_NOTES.md` and `RANKINGS_NOTES.md`, each incident, research gap, atmosphere and glossary term, plus a computed dataset overview). For each question it picks the 8 best passages with BM25 keyword search and sends them to Google Gemini, numbered. Gemini is told to answer only from those passages, cite them as [1], [2], ..., and say when the data doesn't cover a question. The app turns those numbers into the source list under each answer and drops any number that doesn't match a passage.
+
+- **API key (free tier):** get a Gemini API key from Google AI Studio. Never commit it.
+  - Locally: put it in `.env` in the project root (git-ignored): `GEMINI_API_KEY=your-key-here`
+  - On Streamlit Community Cloud: app ⋯ → Settings → Secrets: `GEMINI_API_KEY = "your-key-here"`
+  - Optional: `GEMINI_MODEL` (default `gemini-3.8-flash`, a stable model on the free tier)
+- **Without a key** the page still works as a search: it shows the closest passages instead of an answer.
+- **Limits:** 20 questions per browser session and 500 characters per question, to stay inside the free quota. On the free tier, Google may use prompts to improve its products (all data here is public NASA data).
 
 ### Docs & Scripts
 
@@ -35,6 +46,7 @@ Seven pages, in the top navigation: **Home** (headline finding and Moon-base cha
 | `astraeon/data.py` | Data layer for the app: `load_all()` joins every file by id into one table; `show()` turns blanks into "Not reported" | **Person 1 + Person 3** |
 | `astraeon/charts.py` | Ready-made charts: `moon_chart()` (oxygen vs. pressure with the Moon-base zone), `rank_chart()` (scores for one setting) | **Person 1** |
 | `astraeon/ui.py` | Streamlit pieces shared by the pages: cached loaders, badges, experiment cards, the details dialog | **Person 1** |
+| `astraeon/rag.py`, `app_pages/ask.py` | Ask Astraeon: passages from the data files, BM25 retrieval, Claude answers with citations | **Person 1** |
 | `app.py`, `app_pages/`, `.streamlit/config.toml` | The dashboard: navigation, the seven pages, the theme | **Person 1** |
 | `data/moon_evidence.csv` | One Moon-evidence badge per experiment (confirmed, near miss, not confirmed, ...) with a one-line reason | **Person 1** |
 | `data/images.csv`, `assets/images/` | Real experiment photos from PSI, only those with a stated license (CC0-1.0) | **Person 1** |
